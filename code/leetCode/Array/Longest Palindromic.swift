@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Solution {
+class LongestPalindromic {
   /*
    "abc"
    "bcacb"
@@ -125,7 +125,14 @@ class Solution {
   }
 }
 
-
-
-let s = Solution()
-print(s.longestPalindrome("abccabccff"))
+extension LongestPalindromic: Algorithm {
+  var name: String {
+    return "LongestPalindromic"
+  }
+  
+  func doTest() {
+    performLogCostTime(self.name) {
+      print(self.longestPalindrome("abccabccff"))
+    }
+  }
+}

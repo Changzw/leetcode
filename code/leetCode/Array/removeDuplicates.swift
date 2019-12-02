@@ -8,16 +8,7 @@
 
 import Foundation
 
-func performLogCostTime(_ name: String, _ exec: () -> ()) {
-  let startTime = CFAbsoluteTimeGetCurrent()
-  //要执行的代码
-  exec()
-  let endTime = CFAbsoluteTimeGetCurrent()
-  
-  debugPrint("\(name) cust：\((endTime - startTime)*1000)s")
-}
-
-class Solution {
+class RemoveDuplicates {
   func removeDuplicates(_ nums: inout [Int]) -> Int {
     guard nums.count != 0 else { return 0 }
     
@@ -28,6 +19,19 @@ class Solution {
       
     }
     return 3;
+  }
+}
+
+extension RemoveDuplicates: Algorithm {
+  var name: String {
+    return "RemoveDuplicates"
+  }
+  
+  func doTest() {
+    performLogCostTime(self.name) {
+      
+    }
+
   }
 }
 

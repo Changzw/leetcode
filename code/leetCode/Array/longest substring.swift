@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Solution {
+class LongestSubstring {
   func lengthOfLongestSubstring(_ s: String) -> Int {
     var itemSet: Set<Character> = Set<Character>()
     var i = s.startIndex, j = s.startIndex
@@ -56,5 +56,17 @@ class Solution {
   }
 }
 
-let s = Solution()
-print(s.lengthOfLongestSubstring2("abba"))
+extension LongestSubstring: Algorithm {
+  var name: String {
+    return "LongestSubstring"
+  }
+  
+  func doTest() {
+    //performLogCostTime("method1") {
+    //  print(self.threeSum1([-1, 0, 1, 2, -1, -4]))
+    //}
+    performLogCostTime(self.name) {
+      print(self.lengthOfLongestSubstring2("abba"))
+    }
+  }
+}

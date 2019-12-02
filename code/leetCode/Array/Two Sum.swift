@@ -8,17 +8,7 @@
 
 import Foundation
 
-
-func performLogCostTime(_ name: String, _ exec: () -> ()) {
-  let startTime = CFAbsoluteTimeGetCurrent()
-  //要执行的代码
-  exec()
-  let endTime = CFAbsoluteTimeGetCurrent()
-  
-  debugPrint("\(name) cost time：\((endTime - startTime)*1000)s")
-}
-
-class Solution {
+class TwoSum {
 //  O(n)
   func twoSum1(_ nums: [Int], _ target: Int) -> [Int] {
     for (m, item1) in nums.enumerated() {
@@ -70,18 +60,25 @@ class Solution {
    }
 }
 
-performLogCostTime("method1") {
-  let s = Solution()
-  print(s.twoSum1([3,2,4], 6))
+extension TwoSum: Algorithm {
+  var name: String {
+    return "2Sum"
+  }
+  
+  func doTest() {
+ 
+    performLogCostTime(self.name + "method1") {
+      print(self.twoSum1([3,2,4], 6))
+    }
+    
+    performLogCostTime(self.name + "method2") {
+      print(self.twoSum2([3,2,4], 6))
+    }
+    
+    performLogCostTime(self.name + "method3") {
+      print(self.twoSum3([3,2,4], 6))
+    }
+  }
 }
 
-performLogCostTime("method2") {
-  let s = Solution()
-  print(s.twoSum2([3,2,4], 6))
-}
-
-performLogCostTime("method3") {
-  let s = Solution()
-  print(s.twoSum3([3,2,4], 6))
-}
 

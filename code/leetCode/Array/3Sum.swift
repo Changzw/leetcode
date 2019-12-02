@@ -23,16 +23,9 @@
  */
 
 import Foundation
-func performLogCostTime(_ name: String, _ exec: () -> ()) {
-  let startTime = CFAbsoluteTimeGetCurrent()
-  //要执行的代码
-  exec()
-  let endTime = CFAbsoluteTimeGetCurrent()
-  
-  debugPrint("\(name) cost time：\((endTime - startTime)*1000)s")
-}
 
-class Solution {
+class _3Sum {
+  
 //  暴力
 /*
    [-1, 0, 1, 2, -1, -4]
@@ -173,25 +166,28 @@ class Solution {
     return res
   }
     
+  
 }
 
-//performLogCostTime("method1") {
-//  let s = Solution()
-//  print(s.threeSum1([-1, 0, 1, 2, -1, -4]))
-//}
-performLogCostTime("method2") {
-  let s = Solution()
-  print(s.threeSum3([-1,0,1,2,-1,-4]))
+extension _3Sum: Algorithm{
+  var name: String {
+    return "3Sum"
+  }
+  
+  func doTest() {
+    //performLogCostTime("method1") {
+    //  print(self.threeSum1([-1, 0, 1, 2, -1, -4]))
+    //}
+    performLogCostTime(self.name) {
+      print(self.threeSum3([-1,0,1,2,-1,-4]))
+    }
+    
+    //performLogCostTime("method2") {
+    //  print(self.twoSum2([3,2,4], 6))
+    //}
+    //
+    //performLogCostTime("method3") {
+    //  print(self.twoSum3([3,2,4], 6))
+    //}
+  }
 }
-
-//performLogCostTime("method2") {
-//  let s = Solution()
-//  print(s.twoSum2([3,2,4], 6))
-//}
-//
-//performLogCostTime("method3") {
-//  let s = Solution()
-//  print(s.twoSum3([3,2,4], 6))
-//}
-
-

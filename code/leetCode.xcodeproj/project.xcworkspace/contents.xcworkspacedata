@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:Add Two Numbers.xcodeproj">
+      location = "self:leetCode.xcodeproj">
    </FileRef>
 </Workspace>

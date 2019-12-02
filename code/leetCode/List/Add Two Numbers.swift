@@ -34,7 +34,7 @@ public class ListNode: CustomStringConvertible {
   }
 }
 
-class Solution {
+class AddTwoNumbers {
   func addTwoNumbers(_ l1: ListNode?, _ l2: ListNode?) -> ListNode? {
     guard
       var l1_ = l1,
@@ -159,18 +159,26 @@ class Solution {
   }
 }
 
-let l1 = ListNode(2)
-l1.next = ListNode(4)
-l1.next!.next = ListNode(3)
-print(l1)
+extension AddTwoNumbers: Algorithm{
+  var name: String {
+    return "AddTwoNumbers"
+  }
+  
+  func doTest() {
+    performLogCostTime(self.name) {
+      let l1 = ListNode(2)
+      l1.next = ListNode(4)
+      l1.next!.next = ListNode(3)
+      print(l1)
+      
+      let l2 = ListNode(4)
+      l2.next = ListNode(6)
+      l2.next!.next = ListNode(5)
+      
+      print(l2)
+      let l = self.addTwoNumbers3(l1, l2, 0)
+      print(l!)
+    }
+  }
+}
 
-let l2 = ListNode(4)
-l2.next = ListNode(6)
-l2.next!.next = ListNode(5)
-
-print(l2)
-
-let s = Solution()
-//let l = s.addTwoNumbers2(l1, l2)
-let l = s.addTwoNumbers3(l1, l2, 0)
-print(l)
