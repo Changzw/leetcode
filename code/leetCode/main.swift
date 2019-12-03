@@ -29,9 +29,11 @@ if false{
   algorithm = _3SumClosest()
 }
 
-
+//MARK: 3Sum
+if true{
+  algorithm = _4Sum()
+}
 //MARK: List
-
 
 if let al = algorithm {
   al.doTest()

@@ -92,7 +92,6 @@ class _3SumClosest {
   
   func threeSumClosest3(_ nums: [Int], _ target: Int) -> Int {
     if nums.count < 3 { return 0 }
-    let data = nums.sorted()
     
     var window: [Int] = [nums[0], nums[1], nums[2]]
     
@@ -128,6 +127,57 @@ class _3SumClosest {
     return currentSum
   }
   
+//  3 Sum 变种
+  /*
+   找3个数，他们的和结果，与target 最接近
+   twoSum: a+b = target
+   so a = target - b = complementary
+   so 遍历 b 接着去找 a, 使用一个map把遍历过的a 存起来
+   这样遍历一遍就可以得到 (a,b)
+   
+   3Sum: a+b+c = target
+   b + c = target - a = complementary
+   so 遍历 a，然后去找 b,c
+   如果不 sort 那么很难确定 b,c
+   sorted 以后 b,c 可以对向遍历 在一次 循环中就可以实现
+   
+   0|1|2|3|4|.........|n-1|
+   a →
+     b →
+                      ← c
+   
+  */
+  
+  func threeSumClosest4(_ nums: [Int], _ target: Int) -> Int {
+    if nums.count < 3 { return 0 }
+    let data = nums.sorted()
+    
+    var i = 0
+    var res = data[0...2].reduce(0, +)
+    
+    while i < data.count - 2 {
+      var l = i + 1
+      var r = data.count - 1
+      
+      while l < r {
+        let sum = data[i] + data[l] + data[r]
+        if (abs(target - res) > abs(target - sum)) {
+          res = sum
+          if res == target {
+            return res
+          }
+        }
+        sum > target ? (r = r - 1) : (l = l + 1)
+      }
+      
+      while i+1<data.count-2 && data[i] == data[i+1] {
+        i = i + 1
+      }
+      i = i + 1
+    }
+    
+    return res
+  }
 }
 
 extension _3SumClosest: Algorithm {
@@ -136,12 +186,12 @@ extension _3SumClosest: Algorithm {
   }
   
   func doTest() {
-    performLogCostTime(self.name + "threeSumClosest1") {
-      print(self.threeSumClosest1([-1,2,1,-4], 1))
-    }
+//    performLogCostTime(self.name + "threeSumClosest1") {
+//      print(self.threeSumClosest4([-1,2,1,-4], 1))
+//    }
     
-    performLogCostTime(self.name + "threeSumClosest2") {
-      print(self.threeSumClosest2([1,2,4,8,16,32,64,128] ,82))
+    performLogCostTime(self.name + "threeSumClosest4") {
+      print(self.threeSumClosest4([-1,0,1,1,55] ,3))
     }
   }
 }

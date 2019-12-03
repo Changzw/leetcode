@@ -152,7 +152,7 @@ class _3Sum {
           res.append([_nums[i1], _nums[i2], _nums[i3]])
           while i2 < i3 && _nums[i2] == _nums[i2+1] { i2 = i2 + 1 }
           while i2 < i3 && _nums[i3] == _nums[i3-1] { i3 = i3 - 1 }
-//让指针走下去
+// 让指针走下去
           i2 = i2 + 1
           i3 = i3 - 1
         }

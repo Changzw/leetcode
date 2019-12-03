@@ -16,6 +16,7 @@
 		908E03702394BE540041EC64 /* 3Sum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908E03692394BE540041EC64 /* 3Sum.swift */; };
 		908E03712394BE540041EC64 /* Two Sum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908E036A2394BE540041EC64 /* Two Sum.swift */; };
 		908E03722394BE540041EC64 /* removeDuplicates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908E036B2394BE540041EC64 /* removeDuplicates.swift */; };
+		9091B2F523965C9000DAF380 /* 4Sum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9091B2F423965C9000DAF380 /* 4Sum.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -41,6 +42,7 @@
 		908E03692394BE540041EC64 /* 3Sum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = 3Sum.swift; sourceTree = "<group>"; };
 		908E036A2394BE540041EC64 /* Two Sum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Two Sum.swift"; sourceTree = "<group>"; };
 		908E036B2394BE540041EC64 /* removeDuplicates.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = removeDuplicates.swift; sourceTree = "<group>"; };
+		9091B2F423965C9000DAF380 /* 4Sum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 4Sum.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,10 +96,11 @@
 			children = (
 				908E03662394BE540041EC64 /* longest substring.swift */,
 				908E03672394BE540041EC64 /* 3SumClosest.swift */,
-				908E03682394BE540041EC64 /* Longest Palindromic.swift */,
 				908E03692394BE540041EC64 /* 3Sum.swift */,
+				908E03682394BE540041EC64 /* Longest Palindromic.swift */,
 				908E036A2394BE540041EC64 /* Two Sum.swift */,
 				908E036B2394BE540041EC64 /* removeDuplicates.swift */,
+				9091B2F423965C9000DAF380 /* 4Sum.swift */,
 			);
 			path = Array;
 			sourceTree = "<group>";
@@ -160,6 +163,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9091B2F523965C9000DAF380 /* 4Sum.swift in Sources */,
 				908E036F2394BE540041EC64 /* Longest Palindromic.swift in Sources */,
 				908E036C2394BE540041EC64 /* Add Two Numbers.swift in Sources */,
 				908E034B2394B6C60041EC64 /* main.swift in Sources */,
