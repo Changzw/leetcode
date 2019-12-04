@@ -37,8 +37,12 @@ if false{
 //MARK: List
 
 //MARK: String
-if true {
+if false {
   algorithm = AddBinary()
+}
+
+if true {
+  algorithm = AddStrings()
 }
 
 if let al = algorithm {
