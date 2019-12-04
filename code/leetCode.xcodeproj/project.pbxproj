@@ -17,6 +17,7 @@
 		908E03712394BE540041EC64 /* Two Sum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908E036A2394BE540041EC64 /* Two Sum.swift */; };
 		908E03722394BE540041EC64 /* removeDuplicates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908E036B2394BE540041EC64 /* removeDuplicates.swift */; };
 		9091B2F523965C9000DAF380 /* 4Sum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9091B2F423965C9000DAF380 /* 4Sum.swift */; };
+		90BEFA90239790FA00743C81 /* Add Binary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90BEFA8F239790FA00743C81 /* Add Binary.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -43,6 +44,7 @@
 		908E036A2394BE540041EC64 /* Two Sum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Two Sum.swift"; sourceTree = "<group>"; };
 		908E036B2394BE540041EC64 /* removeDuplicates.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = removeDuplicates.swift; sourceTree = "<group>"; };
 		9091B2F423965C9000DAF380 /* 4Sum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 4Sum.swift; sourceTree = "<group>"; };
+		90BEFA8F239790FA00743C81 /* Add Binary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Add Binary.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +77,7 @@
 		908E03492394B6C60041EC64 /* leetCode */ = {
 			isa = PBXGroup;
 			children = (
+				90BEFA8E239790E500743C81 /* String */,
 				908E03652394BE540041EC64 /* Array */,
 				908E03632394BE540041EC64 /* List */,
 				908E034A2394B6C60041EC64 /* main.swift */,
@@ -103,6 +106,14 @@
 				9091B2F423965C9000DAF380 /* 4Sum.swift */,
 			);
 			path = Array;
+			sourceTree = "<group>";
+		};
+		90BEFA8E239790E500743C81 /* String */ = {
+			isa = PBXGroup;
+			children = (
+				90BEFA8F239790FA00743C81 /* Add Binary.swift */,
+			);
+			path = String;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -168,6 +179,7 @@
 				908E036C2394BE540041EC64 /* Add Two Numbers.swift in Sources */,
 				908E034B2394B6C60041EC64 /* main.swift in Sources */,
 				908E03582394B8F40041EC64 /* algorithm.swift in Sources */,
+				90BEFA90239790FA00743C81 /* Add Binary.swift in Sources */,
 				908E03702394BE540041EC64 /* 3Sum.swift in Sources */,
 				908E036E2394BE540041EC64 /* 3SumClosest.swift in Sources */,
 				908E036D2394BE540041EC64 /* longest substring.swift in Sources */,

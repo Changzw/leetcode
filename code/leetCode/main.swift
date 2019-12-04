@@ -30,10 +30,16 @@ if false{
 }
 
 //MARK: 3Sum
-if true{
+if false{
   algorithm = _4Sum()
 }
+
 //MARK: List
+
+//MARK: String
+if true {
+  algorithm = AddBinary()
+}
 
 if let al = algorithm {
   al.doTest()
