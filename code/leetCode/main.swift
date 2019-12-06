@@ -18,7 +18,7 @@ func performLogCostTime(_ name: String, _ exec: () -> ()) {
 
 var algorithm: Algorithm?
 
-//MARK: Array
+//MARK: - Array
 //MARK: 3Sum
 if false{
   algorithm = _3Sum()
@@ -34,14 +34,19 @@ if false{
   algorithm = _4Sum()
 }
 
-//MARK: List
+//MARK: RemoveDuplicatesFromSortedSrray
+if true {
+  algorithm = RemoveDuplicatesFromSortedSrray()
+}
 
-//MARK: String
+//MARK: - List
+
+//MARK: - String
 if false {
   algorithm = AddBinary()
 }
 
-if true {
+if false {
   algorithm = AddStrings()
 }
 

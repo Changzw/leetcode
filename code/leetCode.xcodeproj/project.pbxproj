@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		904C66C4239A4491003A64C5 /* Remove Duplicates from Sorted Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904C66C3239A4491003A64C5 /* Remove Duplicates from Sorted Array.swift */; };
+		904C66C6239A4A0A003A64C5 /* Remove Element.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904C66C5239A4A0A003A64C5 /* Remove Element.swift */; };
 		908E034B2394B6C60041EC64 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908E034A2394B6C60041EC64 /* main.swift */; };
 		908E03582394B8F40041EC64 /* algorithm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908E03572394B8F40041EC64 /* algorithm.swift */; };
 		908E036C2394BE540041EC64 /* Add Two Numbers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908E03642394BE540041EC64 /* Add Two Numbers.swift */; };
@@ -20,6 +22,7 @@
 		90BEFA90239790FA00743C81 /* Add Binary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90BEFA8F239790FA00743C81 /* Add Binary.swift */; };
 		90BEFA932397AA7A00743C81 /* Sum of Two Integers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90BEFA922397AA7A00743C81 /* Sum of Two Integers.swift */; };
 		90BEFA952397AB5A00743C81 /* Add Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90BEFA942397AB5A00743C81 /* Add Strings.swift */; };
+		90BEFA972397AED400743C81 /* Add to Array-Form of Integer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90BEFA962397AED400743C81 /* Add to Array-Form of Integer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -35,6 +38,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		904C66C3239A4491003A64C5 /* Remove Duplicates from Sorted Array.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Remove Duplicates from Sorted Array.swift"; sourceTree = "<group>"; };
+		904C66C5239A4A0A003A64C5 /* Remove Element.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Remove Element.swift"; sourceTree = "<group>"; };
 		908E03472394B6C60041EC64 /* leetCode */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = leetCode; sourceTree = BUILT_PRODUCTS_DIR; };
 		908E034A2394B6C60041EC64 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		908E03572394B8F40041EC64 /* algorithm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = algorithm.swift; sourceTree = "<group>"; };
@@ -49,6 +54,7 @@
 		90BEFA8F239790FA00743C81 /* Add Binary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Add Binary.swift"; sourceTree = "<group>"; };
 		90BEFA922397AA7A00743C81 /* Sum of Two Integers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sum of Two Integers.swift"; sourceTree = "<group>"; };
 		90BEFA942397AB5A00743C81 /* Add Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Add Strings.swift"; sourceTree = "<group>"; };
+		90BEFA962397AED400743C81 /* Add to Array-Form of Integer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Add to Array-Form of Integer.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +115,9 @@
 				908E036A2394BE540041EC64 /* Two Sum.swift */,
 				908E036B2394BE540041EC64 /* removeDuplicates.swift */,
 				9091B2F423965C9000DAF380 /* 4Sum.swift */,
+				90BEFA962397AED400743C81 /* Add to Array-Form of Integer.swift */,
+				904C66C3239A4491003A64C5 /* Remove Duplicates from Sorted Array.swift */,
+				904C66C5239A4A0A003A64C5 /* Remove Element.swift */,
 			);
 			path = Array;
 			sourceTree = "<group>";
@@ -188,11 +197,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				90BEFA972397AED400743C81 /* Add to Array-Form of Integer.swift in Sources */,
 				9091B2F523965C9000DAF380 /* 4Sum.swift in Sources */,
 				908E036F2394BE540041EC64 /* Longest Palindromic.swift in Sources */,
 				908E036C2394BE540041EC64 /* Add Two Numbers.swift in Sources */,
 				908E034B2394B6C60041EC64 /* main.swift in Sources */,
 				908E03582394B8F40041EC64 /* algorithm.swift in Sources */,
+				904C66C4239A4491003A64C5 /* Remove Duplicates from Sorted Array.swift in Sources */,
+				904C66C6239A4A0A003A64C5 /* Remove Element.swift in Sources */,
 				90BEFA90239790FA00743C81 /* Add Binary.swift in Sources */,
 				908E03702394BE540041EC64 /* 3Sum.swift in Sources */,
 				90BEFA952397AB5A00743C81 /* Add Strings.swift in Sources */,
