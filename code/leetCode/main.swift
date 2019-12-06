@@ -35,8 +35,12 @@ if false{
 }
 
 //MARK: RemoveDuplicatesFromSortedSrray
-if true {
+if false {
   algorithm = RemoveDuplicatesFromSortedSrray()
+}
+//MARK: RemoveDuplicatesFromSortedSrray2
+if true {
+  algorithm = RemoveDuplicatesFromSortedSrray2()
 }
 
 //MARK: - List

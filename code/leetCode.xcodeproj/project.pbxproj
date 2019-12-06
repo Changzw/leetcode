@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		904C66C4239A4491003A64C5 /* Remove Duplicates from Sorted Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904C66C3239A4491003A64C5 /* Remove Duplicates from Sorted Array.swift */; };
 		904C66C6239A4A0A003A64C5 /* Remove Element.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904C66C5239A4A0A003A64C5 /* Remove Element.swift */; };
+		904C66C8239A4D19003A64C5 /* next-permutation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904C66C7239A4D19003A64C5 /* next-permutation.swift */; };
+		904C66CA239A4E1E003A64C5 /* Remove Duplicates from Sorted Array II.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904C66C9239A4E1E003A64C5 /* Remove Duplicates from Sorted Array II.swift */; };
+		904C66CE239A5256003A64C5 /* Maximum Subarray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904C66CD239A5256003A64C5 /* Maximum Subarray.swift */; };
 		908E034B2394B6C60041EC64 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908E034A2394B6C60041EC64 /* main.swift */; };
 		908E03582394B8F40041EC64 /* algorithm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908E03572394B8F40041EC64 /* algorithm.swift */; };
 		908E036C2394BE540041EC64 /* Add Two Numbers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908E03642394BE540041EC64 /* Add Two Numbers.swift */; };
@@ -40,6 +43,9 @@
 /* Begin PBXFileReference section */
 		904C66C3239A4491003A64C5 /* Remove Duplicates from Sorted Array.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Remove Duplicates from Sorted Array.swift"; sourceTree = "<group>"; };
 		904C66C5239A4A0A003A64C5 /* Remove Element.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Remove Element.swift"; sourceTree = "<group>"; };
+		904C66C7239A4D19003A64C5 /* next-permutation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "next-permutation.swift"; sourceTree = "<group>"; };
+		904C66C9239A4E1E003A64C5 /* Remove Duplicates from Sorted Array II.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Remove Duplicates from Sorted Array II.swift"; sourceTree = "<group>"; };
+		904C66CD239A5256003A64C5 /* Maximum Subarray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Maximum Subarray.swift"; sourceTree = "<group>"; };
 		908E03472394B6C60041EC64 /* leetCode */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = leetCode; sourceTree = BUILT_PRODUCTS_DIR; };
 		908E034A2394B6C60041EC64 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		908E03572394B8F40041EC64 /* algorithm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = algorithm.swift; sourceTree = "<group>"; };
@@ -68,6 +74,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		904C66CB239A523B003A64C5 /* Dynamic Programming */ = {
+			isa = PBXGroup;
+			children = (
+				904C66CC239A5241003A64C5 /* Easy */,
+			);
+			path = "Dynamic Programming";
+			sourceTree = "<group>";
+		};
+		904C66CC239A5241003A64C5 /* Easy */ = {
+			isa = PBXGroup;
+			children = (
+				904C66CD239A5256003A64C5 /* Maximum Subarray.swift */,
+			);
+			path = Easy;
+			sourceTree = "<group>";
+		};
 		908E033E2394B6C60041EC64 = {
 			isa = PBXGroup;
 			children = (
@@ -87,6 +109,7 @@
 		908E03492394B6C60041EC64 /* leetCode */ = {
 			isa = PBXGroup;
 			children = (
+				904C66CB239A523B003A64C5 /* Dynamic Programming */,
 				90BEFA912397AA6F00743C81 /* bits */,
 				90BEFA8E239790E500743C81 /* String */,
 				908E03652394BE540041EC64 /* Array */,
@@ -117,7 +140,9 @@
 				9091B2F423965C9000DAF380 /* 4Sum.swift */,
 				90BEFA962397AED400743C81 /* Add to Array-Form of Integer.swift */,
 				904C66C3239A4491003A64C5 /* Remove Duplicates from Sorted Array.swift */,
+				904C66C9239A4E1E003A64C5 /* Remove Duplicates from Sorted Array II.swift */,
 				904C66C5239A4A0A003A64C5 /* Remove Element.swift */,
+				904C66C7239A4D19003A64C5 /* next-permutation.swift */,
 			);
 			path = Array;
 			sourceTree = "<group>";
@@ -204,7 +229,10 @@
 				908E034B2394B6C60041EC64 /* main.swift in Sources */,
 				908E03582394B8F40041EC64 /* algorithm.swift in Sources */,
 				904C66C4239A4491003A64C5 /* Remove Duplicates from Sorted Array.swift in Sources */,
+				904C66CE239A5256003A64C5 /* Maximum Subarray.swift in Sources */,
+				904C66CA239A4E1E003A64C5 /* Remove Duplicates from Sorted Array II.swift in Sources */,
 				904C66C6239A4A0A003A64C5 /* Remove Element.swift in Sources */,
+				904C66C8239A4D19003A64C5 /* next-permutation.swift in Sources */,
 				90BEFA90239790FA00743C81 /* Add Binary.swift in Sources */,
 				908E03702394BE540041EC64 /* 3Sum.swift in Sources */,
 				90BEFA952397AB5A00743C81 /* Add Strings.swift in Sources */,
