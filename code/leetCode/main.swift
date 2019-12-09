@@ -39,10 +39,19 @@ if false {
   algorithm = RemoveDuplicatesFromSortedSrray()
 }
 //MARK: RemoveDuplicatesFromSortedSrray2
-if true {
+if false {
   algorithm = RemoveDuplicatesFromSortedSrray2()
 }
 
+// MARK: - Dynamic
+//MARK: MaximumSubarray
+if false {
+  algorithm = MaximumSubarray()
+}
+
+if true {
+  algorithm = ClimbingStairs()
+}
 //MARK: - List
 
 //MARK: - String

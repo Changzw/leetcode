@@ -25,7 +25,102 @@ import Foundation
  */
 
 class MaximumSubarray {
+// 暴力求解
+  /*
+   遍历所有
+   
+   */
+  func maxSubArray(_ nums: [Int]) -> Int {
+    var currentSum = 0, maxSum = Int.min
+    var i = 0, j = 0, k = 0
+    while i<nums.count {
+      j = i
+      while j<nums.count {
+        k = i
+        while k<=j {
+          currentSum += nums[k]
+          if currentSum > maxSum {
+            maxSum = currentSum
+          }
+          k += 1
+        }
+        j += 1
+      }
+      i += 1
+    }
+    return 0
+  }
   
+  func maxSubArray2(_ nums: [Int]) -> Int {
+    var currentSum = 0, maxSum = Int.min
+    var i = 0, j = 0
+    while i<nums.count {
+      j = i
+      while j<nums.count {
+        currentSum += nums[j]
+        if currentSum > maxSum {
+          maxSum = currentSum
+        }
+        j += 1
+      }
+      i += 1
+    }
+    return 0
+  }
+  
+  /*
+   divide and conquer
+   分成三个子问题处理
+   左边：maxLeft  = maxSubArray(nums, left, (right+left)/2)
+   右边：maxRight = maxSubArray(nums, (right+left)/2, left)
+   中间：包含left部最右边的元素的 maxSum0 和 包含right最左边元素的最大maxSum1
+        maxMid   = maxSum0 + maxSum1
+   终止条件
+        left >= right
+   */
+  func maxSubArray3(_ nums: [Int]) -> Int {
+    func maxSubArray(_ nums: [Int], left: Int, right: Int) -> Int{
+      if left >= right {
+        return nums[left]
+      }
+      let mid = (left + right) / 2
+      let maxLeftSum  = maxSubArray(nums, left: left, right: mid)
+      let maxRightSum = maxSubArray(nums, left: mid+1, right: right)
+      
+      var maxLeftBorderSum = Int.min, maxRightBorderSum = Int.min, leftBorderSum = 0, rightBorderSum = 0
+      var i = mid, j = mid + 1
+      while i >= left {
+        leftBorderSum += nums[i]
+        if leftBorderSum > maxLeftBorderSum {
+          maxLeftBorderSum = leftBorderSum
+        }
+        i -= 1
+      }
+      
+      while j <= right {
+        rightBorderSum += nums[j]
+        if rightBorderSum > maxRightBorderSum {
+          maxRightBorderSum = rightBorderSum
+        }
+        j += 1
+      }
+      
+      return max(maxLeftSum, maxRightSum, maxLeftBorderSum + maxRightBorderSum)
+    }
+    
+    return maxSubArray(nums, left: 0, right: nums.count - 1)
+  }
+
+  func maxSubArray4(_ nums: [Int]) -> Int {
+    var maxCurrentSum = nums[0], maxSum = nums[0], i = 0
+    while i<nums.count {
+      maxCurrentSum = max(nums[i], maxCurrentSum + nums[i])
+      maxSum = max(maxCurrentSum, maxSum)
+      i += 1
+    }
+    
+    return maxSum
+  }
 }
 
 extension MaximumSubarray: Algorithm {
@@ -34,8 +129,14 @@ extension MaximumSubarray: Algorithm {
   }
   
   func doTest() {
-    performLogCostTime(self.name) {
-      
+    performLogCostTime(self.name+"0") {
+      print(maxSubArray3([-2,1,-3,4,-1,2,1,-5,4]))
     }
+    
+    
+    performLogCostTime(self.name+"1") {
+      print(maxSubArray4([-2,1,-3,4,-1,2,1,-5,4]))
+    }
+
   }
 }
