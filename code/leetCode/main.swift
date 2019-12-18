@@ -49,9 +49,21 @@ if false {
   algorithm = MaximumSubarray()
 }
 
-if true {
+//MARK: ClimbingStairs
+if false {
   algorithm = ClimbingStairs()
 }
+
+//MARK: BestTimetoBuyandSellStock
+if false {
+  algorithm = BestTimetoBuyandSellStock()
+}
+
+//MARK: HouseRobber
+if true {
+  algorithm = HouseRobber()
+}
+
 //MARK: - List
 
 //MARK: - String

@@ -28,7 +28,7 @@ class MaximumSubarray {
 // 暴力求解
   /*
    遍历所有
-   
+   O(n³)
    */
   func maxSubArray(_ nums: [Int]) -> Int {
     var currentSum = 0, maxSum = Int.min
@@ -51,6 +51,7 @@ class MaximumSubarray {
     return 0
   }
   
+//  在 1 上优化，减少一层循环 O(n²)
   func maxSubArray2(_ nums: [Int]) -> Int {
     var currentSum = 0, maxSum = Int.min
     var i = 0, j = 0
@@ -111,6 +112,8 @@ class MaximumSubarray {
     return maxSubArray(nums, left: 0, right: nums.count - 1)
   }
 
+//when it comes to DP, the first thing for us to figure out is the format of the sub problem(or the state of each sub problem).
+//The format of the sub problem can be helpful when we are trying to come up with the recursive relation.
   func maxSubArray4(_ nums: [Int]) -> Int {
     var maxCurrentSum = nums[0], maxSum = nums[0], i = 0
     while i<nums.count {
