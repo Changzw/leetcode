@@ -74,9 +74,6 @@ class HouseRobber{
   
   func rob2(_ nums: [Int]) -> Int {
     
-    
-    
-    
     var cache: [Int:Int] = [:]
     
     func rob(_ nums: [Int], _ i: Int, _ cache: inout [Int:Int]) -> Int {

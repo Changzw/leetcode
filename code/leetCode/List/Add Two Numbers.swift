@@ -8,7 +8,6 @@
 
 import Foundation
 
-
 //Definition for singly-linked list.
 public class ListNode: CustomStringConvertible {
   public var val: Int

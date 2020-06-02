@@ -8,7 +8,66 @@
 
 import Foundation
 
+/*
+ https://leetcode.com/problems/longest-substring-without-repeating-characters/
+ 3. Longest Substring Without Repeating Characters
+ Given a string, find the length of the longest substring without repeating characters.
+ 
+ Example 1:
+   Input: "abcabcbb"
+   Output: 3
+   Explanation: The answer is "abc", with the length of 3.
+   Example 2:
+ 
+ Input: "bbbbb"
+   Output: 1
+   Explanation: The answer is "b", with the length of 1.
+   Example 3:
+  
+ Input: "pwwkew"
+   Output: 3
+   Explanation: The answer is "wke", with the length of 3.
+   Note that the answer must be a substring, "pwke" is a subsequence and not a substring.
+ */
+
+/*
+ my thinking
+ what are the features
+  1. the window is sliding from left to right
+  2. the window is incressingly bigger and bigger
+ 
+ so:
+ we shuld find the conditions
+  * that make window move
+  * that make window bigger
+ 
+ 
+ */
+
 class LongestSubstring {
+  func lengthOfLongestSubstring_2020_01_19(_ s: String) -> Int {
+    var length = 0
+    var items = Array<Character>()
+    var left = s.startIndex
+    var right = left
+    
+    while right != s.endIndex {
+      if !items.contains(s[right]) {
+        // bigger
+        items.append(s[right])
+      }else {
+        // move on
+        let index = items.firstIndex(of: s[right])!
+        left = s.index(left, offsetBy: index + 1)
+        items = Array(s[left...right])// 耗时
+      }
+      right = s.index(after: right)
+      length = max(length, s.distance(from: left, to: right))
+    }
+    
+    return length
+  }
+  
   func lengthOfLongestSubstring(_ s: String) -> Int {
     var itemSet: Set<Character> = Set<Character>()
     var i = s.startIndex, j = s.startIndex
@@ -47,7 +106,7 @@ class LongestSubstring {
         currentLength = currentLength + 1
       }
       itemMap[e] = curr
-      curr = curr + 1
+      curr += 1
       
       maxLength = max(maxLength, currentLength)
     }
@@ -66,7 +125,11 @@ extension LongestSubstring: Algorithm {
     //  print(self.threeSum1([-1, 0, 1, 2, -1, -4]))
     //}
     performLogCostTime(self.name) {
-      print(self.lengthOfLongestSubstring2("abba"))
+      print(self.lengthOfLongestSubstring2("abcabcbbabcabcbb"))
+    }
+    
+    performLogCostTime(self.name + "2020年01月19日10:55:24") {
+      print((self.lengthOfLongestSubstring_2020_01_19("abcabcbbabcabcbb")))
     }
   }
 }

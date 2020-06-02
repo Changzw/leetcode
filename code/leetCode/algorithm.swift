@@ -10,5 +10,6 @@ import Foundation
 
 protocol Algorithm {
   var name: String { get }
+//  var isOpen = false
   func doTest()
 }

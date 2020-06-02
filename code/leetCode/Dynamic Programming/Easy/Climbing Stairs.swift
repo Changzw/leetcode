@@ -39,6 +39,42 @@ import Foundation
  */
 
 class ClimbingStairs {
+  /*
+   递归的三大要素:
+   第一要素：明确你这个函数想要干什么
+   第二要素：寻找递归结束条件
+   第三要素：找出函数的等价关系式
+   */
+  func climbStairs__(_ n: Int) -> Int {
+    if n <= 2 {
+      return n
+    }
+    
+    return climbStairs__(n - 1) + climbStairs__(n - 2)
+  }
+  
+  func climbStairs_memo(_ n: Int) -> Int {
+    var memo: [Int?] = Array(repeating: nil, count: n)
+    
+    func climbStairs(_ n: Int, _ memo: inout [Int?]) -> Int {
+      if n <= 2 {
+        return n
+      }
+      
+      let index = n - 1
+      if memo[index] != nil {
+        return memo[index]!
+      }else {
+        memo[index] = climbStairs(n - 1, &memo) + climbStairs(n - 2, &memo)
+      }
+      
+      return memo[index]!
+    }
+    
+    let res = climbStairs(n, &memo)
+    return res
+  }
+  
   func climbStairs(_ n: Int) -> Int {
     func climbStairs_(_ i: Int, _ n: Int) -> Int {
       if i > n {
@@ -108,8 +144,16 @@ extension ClimbingStairs: Algorithm{
   }
   
   func doTest() {
-    performLogCostTime(self.name) {
-      print(climbStairs3(44))
+    performLogCostTime(self.name + "new") {
+      print(climbStairs__(5))
+    }
+    
+    performLogCostTime(self.name + "origin:") {
+      print(climbStairs(5))
+    }
+    
+    performLogCostTime(self.name + "origin:") {
+      print(climbStairs_memo(5))
     }
   }
 }

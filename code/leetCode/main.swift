@@ -19,6 +19,14 @@ func performLogCostTime(_ name: String, _ exec: () -> ()) {
 var algorithm: Algorithm?
 
 //MARK: - Array
+if true {
+  algorithm = LongestRepeatingCharacterReplacement()
+}
+
+if false {
+  algorithm = LongestSubstring()
+}
+
 //MARK: 3Sum
 if false{
   algorithm = _3Sum()
@@ -60,7 +68,7 @@ if false {
 }
 
 //MARK: HouseRobber
-if true {
+if false {
   algorithm = HouseRobber()
 }
 
