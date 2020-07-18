@@ -66,7 +66,8 @@ class RemoveDuplicatesFromSortedSrray {
     return nums.count
   }
   
-  // 比起第一种方法，费时的是：数组重排，可是结果不需要重排的！
+  // 比起第一种方法，费时的是：每删除一个元素数组重排。如果把后面的元素交换到前面，就不需要重新排数组了。
+  // 题目也说只需
   /*
    如何不要重排呢？
    while i ++
@@ -107,3 +108,4 @@ extension RemoveDuplicatesFromSortedSrray: Algorithm {
     }
   }
 }
+

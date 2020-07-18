@@ -7,9 +7,23 @@
 //
 
 import Foundation
+/*
+ https://leetcode.com/problems/two-sum/
+ Given an array of integers, return indices of the two numbers such that they add up to a specific target.
+ You may assume that each input would have exactly one solution, and you may not use the same element twice.
+ 
+ Example:
+ Given nums = [2, 7, 11, 15], target = 9,
+ Because nums[0] + nums[1] = 2 + 7 = 9,
+ return [0, 1].
+ */
 
 class TwoSum {
-//  O(n)
+/*
+ 分析1： 暴力解决 O(n2)
+  *遍历两边肯定
+  *判断item1 + item2 == target
+ */
   func twoSum1(_ nums: [Int], _ target: Int) -> [Int] {
     for (m, item1) in nums.enumerated() {
       for (n, item2) in nums.enumerated() {
@@ -25,6 +39,12 @@ class TwoSum {
     return []
   }
   
+  /*
+   分析2： 优化暴力解决 O(n2)
+   *遍历两边肯定
+   *将外部遍历过的排除掉
+   *判断item1 + item2 == target
+   */
   func twoSum2(_ nums: [Int], _ target: Int) -> [Int] {
     let count = nums.count
     var i = 0, j = 0
@@ -44,6 +64,12 @@ class TwoSum {
     return []
   }
   
+  /*
+   分析3：使用空间换时间的方式，hash 值处理。优化暴力解决 空间复杂度 O(n)，时间复杂度 O(n)
+   *遍历两边肯定
+   *将外部遍历过的排除掉
+   *判断item1 + item2 == target
+   */
   func twoSum3(_ nums: [Int], _ target: Int) -> [Int] {
     var mapNums = [Int: Int]()
     
@@ -57,7 +83,16 @@ class TwoSum {
     }
     
     return []
-   }
+  }
+  
+  func twoSum4(_ nums: [Int], _ target: Int) -> [Int] {
+    let set = Set(nums)
+    
+    
+
+    return []
+  }
+
 }
 
 extension TwoSum: Algorithm {

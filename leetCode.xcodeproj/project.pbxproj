@@ -8,22 +8,29 @@
 
 /* Begin PBXBuildFile section */
 		900738F4239C5067001AF191 /* Climbing Stairs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 900738F3239C5067001AF191 /* Climbing Stairs.swift */; };
+		901043C824C1856F0055F5BB /* 1. Search in Rotated Sorted Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = 901043C724C1856F0055F5BB /* 1. Search in Rotated Sorted Array.swift */; };
+		901043CA24C29BDB0055F5BB /* 2. SearchRotatedSortedArray2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 901043C924C29BDB0055F5BB /* 2. SearchRotatedSortedArray2.swift */; };
+		901043CC24C2A4450055F5BB /* 3. SearchInsert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 901043CB24C2A4450055F5BB /* 3. SearchInsert.swift */; };
+		901043CE24C2AAC10055F5BB /* 4. FindMedianSortedArrays.swift in Sources */ = {isa = PBXBuildFile; fileRef = 901043CD24C2AAC10055F5BB /* 4. FindMedianSortedArrays.swift */; };
+		901043D024C2C61F0055F5BB /* 6. LongestConsecutiveSequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 901043CF24C2C61F0055F5BB /* 6. LongestConsecutiveSequence.swift */; };
+		901043D224C2D74E0055F5BB /* 11. removeElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 901043D124C2D74E0055F5BB /* 11. removeElement.swift */; };
+		901043D424C2DF190055F5BB /* 12. NextPermutation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 901043D324C2DF190055F5BB /* 12. NextPermutation.swift */; };
 		904C66C4239A4491003A64C5 /* Remove Duplicates from Sorted Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904C66C3239A4491003A64C5 /* Remove Duplicates from Sorted Array.swift */; };
-		904C66C6239A4A0A003A64C5 /* Remove Element.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904C66C5239A4A0A003A64C5 /* Remove Element.swift */; };
 		904C66C8239A4D19003A64C5 /* next-permutation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904C66C7239A4D19003A64C5 /* next-permutation.swift */; };
 		904C66CA239A4E1E003A64C5 /* Remove Duplicates from Sorted Array II.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904C66C9239A4E1E003A64C5 /* Remove Duplicates from Sorted Array II.swift */; };
 		904C66CE239A5256003A64C5 /* Maximum Subarray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904C66CD239A5256003A64C5 /* Maximum Subarray.swift */; };
 		9067740823B34BF0006423D2 /* PartitionEqualSubsetSum .swift in Sources */ = {isa = PBXBuildFile; fileRef = 9067740723B34BF0006423D2 /* PartitionEqualSubsetSum .swift */; };
+		9073A72824860DDF00AF1441 /* merge-sorted-array.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9073A72724860DDF00AF1441 /* merge-sorted-array.swift */; };
+		9083527E24BEB7BC00916C39 /* 7. 2Sum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9083527D24BEB7BC00916C39 /* 7. 2Sum.swift */; };
 		908E034B2394B6C60041EC64 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908E034A2394B6C60041EC64 /* main.swift */; };
 		908E03582394B8F40041EC64 /* algorithm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908E03572394B8F40041EC64 /* algorithm.swift */; };
 		908E036C2394BE540041EC64 /* Add Two Numbers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908E03642394BE540041EC64 /* Add Two Numbers.swift */; };
 		908E036D2394BE540041EC64 /* longest substring.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908E03662394BE540041EC64 /* longest substring.swift */; };
-		908E036E2394BE540041EC64 /* 3SumClosest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908E03672394BE540041EC64 /* 3SumClosest.swift */; };
+		908E036E2394BE540041EC64 /* 9. 3SumClosest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908E03672394BE540041EC64 /* 9. 3SumClosest.swift */; };
 		908E036F2394BE540041EC64 /* Longest Palindromic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908E03682394BE540041EC64 /* Longest Palindromic.swift */; };
-		908E03702394BE540041EC64 /* 3Sum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908E03692394BE540041EC64 /* 3Sum.swift */; };
-		908E03712394BE540041EC64 /* Two Sum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908E036A2394BE540041EC64 /* Two Sum.swift */; };
+		908E03702394BE540041EC64 /* 8. 3Sum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908E03692394BE540041EC64 /* 8. 3Sum.swift */; };
 		908E03722394BE540041EC64 /* removeDuplicates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908E036B2394BE540041EC64 /* removeDuplicates.swift */; };
-		9091B2F523965C9000DAF380 /* 4Sum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9091B2F423965C9000DAF380 /* 4Sum.swift */; };
+		9091B2F523965C9000DAF380 /* 10. 4Sum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9091B2F423965C9000DAF380 /* 10. 4Sum.swift */; };
 		90B1BC5923A9B76100F4063B /* Best Time to Buy and Sell Stock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90B1BC5823A9B76100F4063B /* Best Time to Buy and Sell Stock.swift */; };
 		90B1BC5B23A9C31800F4063B /* House Robber .swift in Sources */ = {isa = PBXBuildFile; fileRef = 90B1BC5A23A9C31800F4063B /* House Robber .swift */; };
 		90BEFA90239790FA00743C81 /* Add Binary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90BEFA8F239790FA00743C81 /* Add Binary.swift */; };
@@ -48,23 +55,30 @@
 
 /* Begin PBXFileReference section */
 		900738F3239C5067001AF191 /* Climbing Stairs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Climbing Stairs.swift"; sourceTree = "<group>"; };
+		901043C724C1856F0055F5BB /* 1. Search in Rotated Sorted Array.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "1. Search in Rotated Sorted Array.swift"; sourceTree = "<group>"; };
+		901043C924C29BDB0055F5BB /* 2. SearchRotatedSortedArray2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "2. SearchRotatedSortedArray2.swift"; sourceTree = "<group>"; };
+		901043CB24C2A4450055F5BB /* 3. SearchInsert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "3. SearchInsert.swift"; sourceTree = "<group>"; };
+		901043CD24C2AAC10055F5BB /* 4. FindMedianSortedArrays.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "4. FindMedianSortedArrays.swift"; sourceTree = "<group>"; };
+		901043CF24C2C61F0055F5BB /* 6. LongestConsecutiveSequence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "6. LongestConsecutiveSequence.swift"; sourceTree = "<group>"; };
+		901043D124C2D74E0055F5BB /* 11. removeElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "11. removeElement.swift"; sourceTree = "<group>"; };
+		901043D324C2DF190055F5BB /* 12. NextPermutation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "12. NextPermutation.swift"; sourceTree = "<group>"; };
 		904C66C3239A4491003A64C5 /* Remove Duplicates from Sorted Array.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Remove Duplicates from Sorted Array.swift"; sourceTree = "<group>"; };
-		904C66C5239A4A0A003A64C5 /* Remove Element.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Remove Element.swift"; sourceTree = "<group>"; };
 		904C66C7239A4D19003A64C5 /* next-permutation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "next-permutation.swift"; sourceTree = "<group>"; };
 		904C66C9239A4E1E003A64C5 /* Remove Duplicates from Sorted Array II.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Remove Duplicates from Sorted Array II.swift"; sourceTree = "<group>"; };
 		904C66CD239A5256003A64C5 /* Maximum Subarray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Maximum Subarray.swift"; sourceTree = "<group>"; };
 		9067740723B34BF0006423D2 /* PartitionEqualSubsetSum .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PartitionEqualSubsetSum .swift"; sourceTree = "<group>"; };
+		9073A72724860DDF00AF1441 /* merge-sorted-array.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "merge-sorted-array.swift"; sourceTree = "<group>"; };
+		9083527D24BEB7BC00916C39 /* 7. 2Sum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "7. 2Sum.swift"; sourceTree = "<group>"; };
 		908E03472394B6C60041EC64 /* leetCode */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = leetCode; sourceTree = BUILT_PRODUCTS_DIR; };
 		908E034A2394B6C60041EC64 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		908E03572394B8F40041EC64 /* algorithm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = algorithm.swift; sourceTree = "<group>"; };
 		908E03642394BE540041EC64 /* Add Two Numbers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Add Two Numbers.swift"; sourceTree = "<group>"; };
 		908E03662394BE540041EC64 /* longest substring.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "longest substring.swift"; sourceTree = "<group>"; };
-		908E03672394BE540041EC64 /* 3SumClosest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = 3SumClosest.swift; sourceTree = "<group>"; };
+		908E03672394BE540041EC64 /* 9. 3SumClosest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "9. 3SumClosest.swift"; sourceTree = "<group>"; };
 		908E03682394BE540041EC64 /* Longest Palindromic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Longest Palindromic.swift"; sourceTree = "<group>"; };
-		908E03692394BE540041EC64 /* 3Sum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = 3Sum.swift; sourceTree = "<group>"; };
-		908E036A2394BE540041EC64 /* Two Sum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Two Sum.swift"; sourceTree = "<group>"; };
+		908E03692394BE540041EC64 /* 8. 3Sum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "8. 3Sum.swift"; sourceTree = "<group>"; };
 		908E036B2394BE540041EC64 /* removeDuplicates.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = removeDuplicates.swift; sourceTree = "<group>"; };
-		9091B2F423965C9000DAF380 /* 4Sum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 4Sum.swift; sourceTree = "<group>"; };
+		9091B2F423965C9000DAF380 /* 10. 4Sum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "10. 4Sum.swift"; sourceTree = "<group>"; };
 		90B1BC5823A9B76100F4063B /* Best Time to Buy and Sell Stock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Best Time to Buy and Sell Stock.swift"; sourceTree = "<group>"; };
 		90B1BC5A23A9C31800F4063B /* House Robber .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "House Robber .swift"; sourceTree = "<group>"; };
 		90BEFA8F239790FA00743C81 /* Add Binary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Add Binary.swift"; sourceTree = "<group>"; };
@@ -164,19 +178,26 @@
 		908E03652394BE540041EC64 /* Array */ = {
 			isa = PBXGroup;
 			children = (
+				904C66C3239A4491003A64C5 /* Remove Duplicates from Sorted Array.swift */,
 				90DBFA2523D406E60048B2C0 /* Longest Repeating Character Replacement.swift */,
 				908E03662394BE540041EC64 /* longest substring.swift */,
-				908E03672394BE540041EC64 /* 3SumClosest.swift */,
-				908E03692394BE540041EC64 /* 3Sum.swift */,
 				908E03682394BE540041EC64 /* Longest Palindromic.swift */,
-				908E036A2394BE540041EC64 /* Two Sum.swift */,
 				908E036B2394BE540041EC64 /* removeDuplicates.swift */,
-				9091B2F423965C9000DAF380 /* 4Sum.swift */,
 				90BEFA962397AED400743C81 /* Add to Array-Form of Integer.swift */,
-				904C66C3239A4491003A64C5 /* Remove Duplicates from Sorted Array.swift */,
 				904C66C9239A4E1E003A64C5 /* Remove Duplicates from Sorted Array II.swift */,
-				904C66C5239A4A0A003A64C5 /* Remove Element.swift */,
 				904C66C7239A4D19003A64C5 /* next-permutation.swift */,
+				9073A72724860DDF00AF1441 /* merge-sorted-array.swift */,
+				901043C724C1856F0055F5BB /* 1. Search in Rotated Sorted Array.swift */,
+				901043C924C29BDB0055F5BB /* 2. SearchRotatedSortedArray2.swift */,
+				901043CB24C2A4450055F5BB /* 3. SearchInsert.swift */,
+				901043CD24C2AAC10055F5BB /* 4. FindMedianSortedArrays.swift */,
+				901043CF24C2C61F0055F5BB /* 6. LongestConsecutiveSequence.swift */,
+				9083527D24BEB7BC00916C39 /* 7. 2Sum.swift */,
+				908E03692394BE540041EC64 /* 8. 3Sum.swift */,
+				908E03672394BE540041EC64 /* 9. 3SumClosest.swift */,
+				9091B2F423965C9000DAF380 /* 10. 4Sum.swift */,
+				901043D124C2D74E0055F5BB /* 11. removeElement.swift */,
+				901043D324C2DF190055F5BB /* 12. NextPermutation.swift */,
 			);
 			path = Array;
 			sourceTree = "<group>";
@@ -257,9 +278,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				90BEFA972397AED400743C81 /* Add to Array-Form of Integer.swift in Sources */,
-				9091B2F523965C9000DAF380 /* 4Sum.swift in Sources */,
+				9091B2F523965C9000DAF380 /* 10. 4Sum.swift in Sources */,
 				9067740823B34BF0006423D2 /* PartitionEqualSubsetSum .swift in Sources */,
 				908E036F2394BE540041EC64 /* Longest Palindromic.swift in Sources */,
+				901043C824C1856F0055F5BB /* 1. Search in Rotated Sorted Array.swift in Sources */,
 				908E036C2394BE540041EC64 /* Add Two Numbers.swift in Sources */,
 				90DBFA2423D403520048B2C0 /* StringIndex+extension.swift in Sources */,
 				908E034B2394B6C60041EC64 /* main.swift in Sources */,
@@ -267,20 +289,26 @@
 				904C66C4239A4491003A64C5 /* Remove Duplicates from Sorted Array.swift in Sources */,
 				900738F4239C5067001AF191 /* Climbing Stairs.swift in Sources */,
 				90B1BC5B23A9C31800F4063B /* House Robber .swift in Sources */,
+				901043CE24C2AAC10055F5BB /* 4. FindMedianSortedArrays.swift in Sources */,
 				904C66CE239A5256003A64C5 /* Maximum Subarray.swift in Sources */,
 				904C66CA239A4E1E003A64C5 /* Remove Duplicates from Sorted Array II.swift in Sources */,
-				904C66C6239A4A0A003A64C5 /* Remove Element.swift in Sources */,
 				904C66C8239A4D19003A64C5 /* next-permutation.swift in Sources */,
 				90BEFA90239790FA00743C81 /* Add Binary.swift in Sources */,
-				908E03702394BE540041EC64 /* 3Sum.swift in Sources */,
+				901043CA24C29BDB0055F5BB /* 2. SearchRotatedSortedArray2.swift in Sources */,
+				908E03702394BE540041EC64 /* 8. 3Sum.swift in Sources */,
 				90B1BC5923A9B76100F4063B /* Best Time to Buy and Sell Stock.swift in Sources */,
 				90BEFA952397AB5A00743C81 /* Add Strings.swift in Sources */,
-				908E036E2394BE540041EC64 /* 3SumClosest.swift in Sources */,
+				901043D024C2C61F0055F5BB /* 6. LongestConsecutiveSequence.swift in Sources */,
+				908E036E2394BE540041EC64 /* 9. 3SumClosest.swift in Sources */,
+				901043CC24C2A4450055F5BB /* 3. SearchInsert.swift in Sources */,
 				90DBFA2623D406E60048B2C0 /* Longest Repeating Character Replacement.swift in Sources */,
+				901043D224C2D74E0055F5BB /* 11. removeElement.swift in Sources */,
+				9073A72824860DDF00AF1441 /* merge-sorted-array.swift in Sources */,
 				908E036D2394BE540041EC64 /* longest substring.swift in Sources */,
+				901043D424C2DF190055F5BB /* 12. NextPermutation.swift in Sources */,
 				90BEFA932397AA7A00743C81 /* Sum of Two Integers.swift in Sources */,
 				908E03722394BE540041EC64 /* removeDuplicates.swift in Sources */,
-				908E03712394BE540041EC64 /* Two Sum.swift in Sources */,
+				9083527E24BEB7BC00916C39 /* 7. 2Sum.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

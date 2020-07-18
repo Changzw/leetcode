@@ -68,6 +68,47 @@ class LongestSubstring {
     return length
   }
   
+  func x2020_06_02(_ s: String) -> Int {
+    var len = 0
+    var left = s.startIndex
+    var right = left
+    
+    var window = ""
+    
+    while right != s.endIndex {
+      let curChar = s[right]
+      if window.contains(curChar) {
+        let index = window.firstIndex(of: curChar)!
+        let distance = window.distance(from: window.startIndex, to: index)
+        left = s.index(left, offsetBy: distance + 1)
+      }
+      right = s.index(after: right)
+      window = String(s[left..<right])
+      len = max(len, s.distance(from: left, to: right))
+    }
+    
+    return len
+  }
+  
+  func xx2020_06_02(_ s: String) -> Int {
+    var kv: [Character: String.Index] = [:]
+    var len = 0
+    var left = s.startIndex
+    var right = left
+    
+    while right != s.endIndex {
+      let ch = s[right]
+      if let i = kv[ch] {
+        left = s.index(after: i)
+      }
+      kv[ch] = right
+      len = max(len, s.distance(from: left, to: right))
+      right = s.index(after: right)
+    }
+    
+    return len
+  }
+  
   func lengthOfLongestSubstring(_ s: String) -> Int {
     var itemSet: Set<Character> = Set<Character>()
     var i = s.startIndex, j = s.startIndex
@@ -92,27 +133,48 @@ class LongestSubstring {
   
   func lengthOfLongestSubstring2(_ s: String) -> Int {
     var itemMap: [Character: Int] = [:]
-    var start = 0, curr = 0
-    
-    var maxLength = 0
-    var currentLength = 0
+    var left = 0, right = 0
+    var len = 0
     
     for e in s {
-      if itemMap[e] != nil {
-        start = max(itemMap[e]! + 1, start)
-        itemMap[e] = curr
-        currentLength = curr - start + 1
-      }else {
-        currentLength = currentLength + 1
+      if let idx = itemMap[e] {
+        left = max(idx + 1, left)
       }
-      itemMap[e] = curr
-      curr += 1
-      
-      maxLength = max(maxLength, currentLength)
+      itemMap[e] = right
+      len = max(len, right - left + 1)
+      right += 1
     }
     
-    return maxLength
+    return len
   }
+  
+  func lengthOfLongestSubstring3(_ s: String) -> Int {
+    var itemMap: [Character: Int] = [:]
+    var left = 0
+    var len = 0
+    
+    for right in 0..<s.count {
+      let idx = s.index(s.startIndex, offsetBy: right)
+      let ch = s[idx]
+      
+      if let x = itemMap[ch] {
+        left = max(x + 1, left)
+      }
+      itemMap[ch] = right
+      len = max(len, right - left + 1)
+    }
+    
+    return len
+  }
+
+}
+
+extension StringProtocol {
+  var ascii: [UInt8] { compactMap(\.asciiValue) }
+}
+
+class LongestSubstring_ {
+  
 }
 
 extension LongestSubstring: Algorithm {
@@ -125,11 +187,11 @@ extension LongestSubstring: Algorithm {
     //  print(self.threeSum1([-1, 0, 1, 2, -1, -4]))
     //}
     performLogCostTime(self.name) {
-      print(self.lengthOfLongestSubstring2("abcabcbbabcabcbb"))
+      print(self.lengthOfLongestSubstring3("abcabcbb"))
     }
     
-    performLogCostTime(self.name + "2020年01月19日10:55:24") {
-      print((self.lengthOfLongestSubstring_2020_01_19("abcabcbbabcabcbb")))
-    }
+//    performLogCostTime(self.name + "2020年01月19日10:55:24") {
+//      print((self.lengthOfLongestSubstring_2020_01_19("abcabcbbabcabcbb")))
+//    }
   }
 }

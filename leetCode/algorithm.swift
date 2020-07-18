@@ -13,3 +13,8 @@ protocol Algorithm {
 //  var isOpen = false
   func doTest()
 }
+
+extension Algorithm {
+  var name: String { String(describing: Self.self) }
+  
+}
