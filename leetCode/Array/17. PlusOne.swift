@@ -25,35 +25,22 @@ import Foundation
 
 class PlusOne {
   func plusOne(_ digits: [Int]) -> [Int] {
-    
-//    func carry(_ digits: [Int], c: Int) {
-//      var position = digits.count - 1
-//      var carry = c
-//      while position >= 0 {
-//
-//      }
-//    }
-    
     var res = digits
-    var position = digits.count - 1
+    var pos = digits.count - 1
     var carry = 1
     
-    while position >= 0 {
-      res[position] += carry
-      
-      if res[position] == 10 {
+    while pos >= 0 {
+      res[pos] += carry
+      if res[pos] == 10 {
         carry = 1
-        res[position] = 0
+        res[pos] = 0
       }else {
         carry = 0
       }
-      position -= 1
+      pos -= 1
     }
     
-    if carry == 1 {
-      return [1] + res
-    }
-    
+    if carry == 1 { return [1] + res }
     return res
   }
 }
