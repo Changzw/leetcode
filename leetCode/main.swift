@@ -126,7 +126,22 @@ if false {
   algorithm?.doTest()
 }
 
-if true {
+if false {
   algorithm = NextPermutation()
+  algorithm?.doTest()
+}
+
+if false {
+  algorithm = PermutationSequence()
+  algorithm?.doTest()
+}
+
+if false {
+  algorithm = TrappingRainWater()
+  algorithm?.doTest()
+}
+
+if true {
+  algorithm = RotateImage()
   algorithm?.doTest()
 }
