@@ -141,7 +141,27 @@ if false {
   algorithm?.doTest()
 }
 
-if true {
+if false {
   algorithm = RotateImage()
+  algorithm?.doTest()
+}
+
+if false {
+  algorithm = Climbing_Stairs()
+  algorithm?.doTest()
+}
+
+if false {
+  algorithm = GrayCode()
+  algorithm?.doTest()
+}
+
+if false {
+  algorithm = SetMatrixZeroes()
+  algorithm?.doTest()
+}
+
+if true {
+  algorithm = GasStation()
   algorithm?.doTest()
 }

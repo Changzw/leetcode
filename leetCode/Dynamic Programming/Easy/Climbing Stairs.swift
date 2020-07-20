@@ -33,9 +33,11 @@ import Foundation
 
 /*
 1.brute force
- climbStairs(i,n)=climbStairs(i+1,n)+climbStairs(i+2,n)
- 事件复杂度 2的n次方
- 控件复杂度 O(n) 树深是 n
+ 因为要爬到5，之前的可能是 3 or 4 (5-1,5-2)
+ 所以根据该题，得出公式：
+ f(n) = f(n-1) + f(n-2)
+ f(1) = 1
+ f(2) = 2
  */
 
 class ClimbingStairs {
@@ -45,6 +47,7 @@ class ClimbingStairs {
    第二要素：寻找递归结束条件
    第三要素：找出函数的等价关系式
    */
+  
   func climbStairs__(_ n: Int) -> Int {
     if n <= 2 {
       return n
@@ -52,6 +55,8 @@ class ClimbingStairs {
     
     return climbStairs__(n - 1) + climbStairs__(n - 2)
   }
+  
+  
   
   func climbStairs_memo(_ n: Int) -> Int {
     var memo: [Int?] = Array(repeating: nil, count: n)
