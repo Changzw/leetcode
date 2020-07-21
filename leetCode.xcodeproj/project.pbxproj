@@ -35,6 +35,7 @@
 		907EA5C524C6B87C0091908F /* 2. Reverse Linked List II.swift in Sources */ = {isa = PBXBuildFile; fileRef = 907EA5C424C6B87C0091908F /* 2. Reverse Linked List II.swift */; };
 		907EA5C724C6D84C0091908F /* 3. Partition List.swift in Sources */ = {isa = PBXBuildFile; fileRef = 907EA5C624C6D84C0091908F /* 3. Partition List.swift */; };
 		907EA5C924C6DD830091908F /* 4. Remove Duplicates from Sorted List.swift in Sources */ = {isa = PBXBuildFile; fileRef = 907EA5C824C6DD830091908F /* 4. Remove Duplicates from Sorted List.swift */; };
+		907EA5CB24C6E1C40091908F /* 5. Remove Duplicates from Sorted List2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 907EA5CA24C6E1C30091908F /* 5. Remove Duplicates from Sorted List2.swift */; };
 		9083527E24BEB7BC00916C39 /* 7. 2Sum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9083527D24BEB7BC00916C39 /* 7. 2Sum.swift */; };
 		908E034B2394B6C60041EC64 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908E034A2394B6C60041EC64 /* main.swift */; };
 		908E03582394B8F40041EC64 /* algorithm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908E03572394B8F40041EC64 /* algorithm.swift */; };
@@ -96,6 +97,7 @@
 		907EA5C424C6B87C0091908F /* 2. Reverse Linked List II.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "2. Reverse Linked List II.swift"; sourceTree = "<group>"; };
 		907EA5C624C6D84C0091908F /* 3. Partition List.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "3. Partition List.swift"; sourceTree = "<group>"; };
 		907EA5C824C6DD830091908F /* 4. Remove Duplicates from Sorted List.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "4. Remove Duplicates from Sorted List.swift"; sourceTree = "<group>"; };
+		907EA5CA24C6E1C30091908F /* 5. Remove Duplicates from Sorted List2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "5. Remove Duplicates from Sorted List2.swift"; sourceTree = "<group>"; };
 		9083527D24BEB7BC00916C39 /* 7. 2Sum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "7. 2Sum.swift"; sourceTree = "<group>"; };
 		908E03472394B6C60041EC64 /* leetCode */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = leetCode; sourceTree = BUILT_PRODUCTS_DIR; };
 		908E034A2394B6C60041EC64 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
@@ -194,6 +196,7 @@
 				907EA5C424C6B87C0091908F /* 2. Reverse Linked List II.swift */,
 				907EA5C624C6D84C0091908F /* 3. Partition List.swift */,
 				907EA5C824C6DD830091908F /* 4. Remove Duplicates from Sorted List.swift */,
+				907EA5CA24C6E1C30091908F /* 5. Remove Duplicates from Sorted List2.swift */,
 			);
 			path = List;
 			sourceTree = "<group>";
@@ -321,6 +324,7 @@
 				901043C824C1856F0055F5BB /* 1. Search in Rotated Sorted Array.swift in Sources */,
 				908E036C2394BE540041EC64 /* 1. Add Two Numbers.swift in Sources */,
 				907EA5BF24C67D150091908F /* 22. Candy.swift in Sources */,
+				907EA5CB24C6E1C40091908F /* 5. Remove Duplicates from Sorted List2.swift in Sources */,
 				90DBFA2423D403520048B2C0 /* StringIndex+extension.swift in Sources */,
 				907EA5C724C6D84C0091908F /* 3. Partition List.swift in Sources */,
 				908E034B2394B6C60041EC64 /* main.swift in Sources */,

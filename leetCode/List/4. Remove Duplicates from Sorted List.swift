@@ -24,6 +24,7 @@ import Foundation
  
  因为是有序的。所以可以不需要set ，跳跃节点就好
  
+ 迭代 vs 递归（你的弱项！！ 尝试）
  */
 class RemoveDuplicatesfromSortedList {
   func deleteDuplicates_(_ head: ListNode?) -> ListNode? {

@@ -201,7 +201,12 @@ if false {
   algorithm?.doTest()
 }
 
-if true {
+if false {
   algorithm = RemoveDuplicatesfromSortedList()
+  algorithm?.doTest()
+}
+
+if true {
+  algorithm = RemoveDuplicatesfromSortedList2()
   algorithm?.doTest()
 }
