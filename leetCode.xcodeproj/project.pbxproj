@@ -29,10 +29,16 @@
 		907EA5B924C57AF50091908F /* 19. GrayCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 907EA5B824C57AF50091908F /* 19. GrayCode.swift */; };
 		907EA5BB24C586D00091908F /* 20. Set Matrix Zeroes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 907EA5BA24C586D00091908F /* 20. Set Matrix Zeroes.swift */; };
 		907EA5BD24C5904A0091908F /* 21. Gas Station.swift in Sources */ = {isa = PBXBuildFile; fileRef = 907EA5BC24C5904A0091908F /* 21. Gas Station.swift */; };
+		907EA5BF24C67D150091908F /* 22. Candy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 907EA5BE24C67D150091908F /* 22. Candy.swift */; };
+		907EA5C124C693830091908F /* 23. Single Number.swift in Sources */ = {isa = PBXBuildFile; fileRef = 907EA5C024C693830091908F /* 23. Single Number.swift */; };
+		907EA5C324C6978A0091908F /* 24. Single Number II.swift in Sources */ = {isa = PBXBuildFile; fileRef = 907EA5C224C6978A0091908F /* 24. Single Number II.swift */; };
+		907EA5C524C6B87C0091908F /* 2. Reverse Linked List II.swift in Sources */ = {isa = PBXBuildFile; fileRef = 907EA5C424C6B87C0091908F /* 2. Reverse Linked List II.swift */; };
+		907EA5C724C6D84C0091908F /* 3. Partition List.swift in Sources */ = {isa = PBXBuildFile; fileRef = 907EA5C624C6D84C0091908F /* 3. Partition List.swift */; };
+		907EA5C924C6DD830091908F /* 4. Remove Duplicates from Sorted List.swift in Sources */ = {isa = PBXBuildFile; fileRef = 907EA5C824C6DD830091908F /* 4. Remove Duplicates from Sorted List.swift */; };
 		9083527E24BEB7BC00916C39 /* 7. 2Sum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9083527D24BEB7BC00916C39 /* 7. 2Sum.swift */; };
 		908E034B2394B6C60041EC64 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908E034A2394B6C60041EC64 /* main.swift */; };
 		908E03582394B8F40041EC64 /* algorithm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908E03572394B8F40041EC64 /* algorithm.swift */; };
-		908E036C2394BE540041EC64 /* Add Two Numbers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908E03642394BE540041EC64 /* Add Two Numbers.swift */; };
+		908E036C2394BE540041EC64 /* 1. Add Two Numbers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908E03642394BE540041EC64 /* 1. Add Two Numbers.swift */; };
 		908E036D2394BE540041EC64 /* longest substring.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908E03662394BE540041EC64 /* longest substring.swift */; };
 		908E036E2394BE540041EC64 /* 9. 3SumClosest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908E03672394BE540041EC64 /* 9. 3SumClosest.swift */; };
 		908E036F2394BE540041EC64 /* Longest Palindromic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908E03682394BE540041EC64 /* Longest Palindromic.swift */; };
@@ -84,11 +90,17 @@
 		907EA5B824C57AF50091908F /* 19. GrayCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "19. GrayCode.swift"; sourceTree = "<group>"; };
 		907EA5BA24C586D00091908F /* 20. Set Matrix Zeroes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "20. Set Matrix Zeroes.swift"; sourceTree = "<group>"; };
 		907EA5BC24C5904A0091908F /* 21. Gas Station.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "21. Gas Station.swift"; sourceTree = "<group>"; };
+		907EA5BE24C67D150091908F /* 22. Candy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "22. Candy.swift"; sourceTree = "<group>"; };
+		907EA5C024C693830091908F /* 23. Single Number.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "23. Single Number.swift"; sourceTree = "<group>"; };
+		907EA5C224C6978A0091908F /* 24. Single Number II.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "24. Single Number II.swift"; sourceTree = "<group>"; };
+		907EA5C424C6B87C0091908F /* 2. Reverse Linked List II.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "2. Reverse Linked List II.swift"; sourceTree = "<group>"; };
+		907EA5C624C6D84C0091908F /* 3. Partition List.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "3. Partition List.swift"; sourceTree = "<group>"; };
+		907EA5C824C6DD830091908F /* 4. Remove Duplicates from Sorted List.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "4. Remove Duplicates from Sorted List.swift"; sourceTree = "<group>"; };
 		9083527D24BEB7BC00916C39 /* 7. 2Sum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "7. 2Sum.swift"; sourceTree = "<group>"; };
 		908E03472394B6C60041EC64 /* leetCode */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = leetCode; sourceTree = BUILT_PRODUCTS_DIR; };
 		908E034A2394B6C60041EC64 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		908E03572394B8F40041EC64 /* algorithm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = algorithm.swift; sourceTree = "<group>"; };
-		908E03642394BE540041EC64 /* Add Two Numbers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Add Two Numbers.swift"; sourceTree = "<group>"; };
+		908E03642394BE540041EC64 /* 1. Add Two Numbers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "1. Add Two Numbers.swift"; sourceTree = "<group>"; };
 		908E03662394BE540041EC64 /* longest substring.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "longest substring.swift"; sourceTree = "<group>"; };
 		908E03672394BE540041EC64 /* 9. 3SumClosest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "9. 3SumClosest.swift"; sourceTree = "<group>"; };
 		908E03682394BE540041EC64 /* Longest Palindromic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Longest Palindromic.swift"; sourceTree = "<group>"; };
@@ -144,13 +156,6 @@
 			path = medium;
 			sourceTree = "<group>";
 		};
-		9085060F247AA46000E0F8CC /* interview */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = interview;
-			sourceTree = "<group>";
-		};
 		908E033E2394B6C60041EC64 = {
 			isa = PBXGroup;
 			children = (
@@ -170,7 +175,6 @@
 		908E03492394B6C60041EC64 /* leetCode */ = {
 			isa = PBXGroup;
 			children = (
-				9085060F247AA46000E0F8CC /* interview */,
 				904C66CB239A523B003A64C5 /* Dynamic Programming */,
 				90BEFA912397AA6F00743C81 /* bits */,
 				90BEFA8E239790E500743C81 /* String */,
@@ -186,7 +190,10 @@
 		908E03632394BE540041EC64 /* List */ = {
 			isa = PBXGroup;
 			children = (
-				908E03642394BE540041EC64 /* Add Two Numbers.swift */,
+				908E03642394BE540041EC64 /* 1. Add Two Numbers.swift */,
+				907EA5C424C6B87C0091908F /* 2. Reverse Linked List II.swift */,
+				907EA5C624C6D84C0091908F /* 3. Partition List.swift */,
+				907EA5C824C6DD830091908F /* 4. Remove Duplicates from Sorted List.swift */,
 			);
 			path = List;
 			sourceTree = "<group>";
@@ -222,6 +229,9 @@
 				907EA5B824C57AF50091908F /* 19. GrayCode.swift */,
 				907EA5BA24C586D00091908F /* 20. Set Matrix Zeroes.swift */,
 				907EA5BC24C5904A0091908F /* 21. Gas Station.swift */,
+				907EA5BE24C67D150091908F /* 22. Candy.swift */,
+				907EA5C024C693830091908F /* 23. Single Number.swift */,
+				907EA5C224C6978A0091908F /* 24. Single Number II.swift */,
 			);
 			path = Array;
 			sourceTree = "<group>";
@@ -304,11 +314,15 @@
 				90BEFA972397AED400743C81 /* Add to Array-Form of Integer.swift in Sources */,
 				9091B2F523965C9000DAF380 /* 10. 4Sum.swift in Sources */,
 				9067740823B34BF0006423D2 /* PartitionEqualSubsetSum .swift in Sources */,
+				907EA5C924C6DD830091908F /* 4. Remove Duplicates from Sorted List.swift in Sources */,
 				908E036F2394BE540041EC64 /* Longest Palindromic.swift in Sources */,
 				901043DC24C417E20055F5BB /* 17. PlusOne.swift in Sources */,
+				907EA5C324C6978A0091908F /* 24. Single Number II.swift in Sources */,
 				901043C824C1856F0055F5BB /* 1. Search in Rotated Sorted Array.swift in Sources */,
-				908E036C2394BE540041EC64 /* Add Two Numbers.swift in Sources */,
+				908E036C2394BE540041EC64 /* 1. Add Two Numbers.swift in Sources */,
+				907EA5BF24C67D150091908F /* 22. Candy.swift in Sources */,
 				90DBFA2423D403520048B2C0 /* StringIndex+extension.swift in Sources */,
+				907EA5C724C6D84C0091908F /* 3. Partition List.swift in Sources */,
 				908E034B2394B6C60041EC64 /* main.swift in Sources */,
 				907EA5B924C57AF50091908F /* 19. GrayCode.swift in Sources */,
 				908E03582394B8F40041EC64 /* algorithm.swift in Sources */,
@@ -330,6 +344,7 @@
 				90BEFA952397AB5A00743C81 /* Add Strings.swift in Sources */,
 				901043DA24C410BA0055F5BB /* 16. Rotate Image.swift in Sources */,
 				901043D024C2C61F0055F5BB /* 6. LongestConsecutiveSequence.swift in Sources */,
+				907EA5C524C6B87C0091908F /* 2. Reverse Linked List II.swift in Sources */,
 				908E036E2394BE540041EC64 /* 9. 3SumClosest.swift in Sources */,
 				901043CC24C2A4450055F5BB /* 3. SearchInsert.swift in Sources */,
 				90DBFA2623D406E60048B2C0 /* Longest Repeating Character Replacement.swift in Sources */,
@@ -340,6 +355,7 @@
 				901043D424C2DF190055F5BB /* 12. NextPermutation.swift in Sources */,
 				90BEFA932397AA7A00743C81 /* Sum of Two Integers.swift in Sources */,
 				908E03722394BE540041EC64 /* removeDuplicates.swift in Sources */,
+				907EA5C124C693830091908F /* 23. Single Number.swift in Sources */,
 				9083527E24BEB7BC00916C39 /* 7. 2Sum.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

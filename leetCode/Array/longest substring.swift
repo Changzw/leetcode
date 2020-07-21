@@ -183,15 +183,8 @@ extension LongestSubstring: Algorithm {
   }
   
   func doTest() {
-    //performLogCostTime("method1") {
-    //  print(self.threeSum1([-1, 0, 1, 2, -1, -4]))
-    //}
     performLogCostTime(self.name) {
       print(self.lengthOfLongestSubstring3("abcabcbb"))
     }
-    
-//    performLogCostTime(self.name + "2020年01月19日10:55:24") {
-//      print((self.lengthOfLongestSubstring_2020_01_19("abcabcbbabcabcbb")))
-//    }
   }
 }

@@ -21,57 +21,88 @@ https://assets.leetcode-cn.com/aliyun-lc-upload/uploads/2018/10/22/rainwatertrap
 输出: 6
 
 分析:
- 1. 减去 等于0
- 2. 从左指针向右游走
- 3. 锚定 leftAnchor，在右边找到第一个 max(rightArr) >= height[leftAnchor] || 没有大于 height[leftAnchor] 取 max(rightArr)，
-    得到位置 rightAnchor
- 4. 得到 leftAnchor -- rightAnchor 之间的谁住高度
- 5. leftAnchor 到达右边结束
+ 方法一：
+ 1. 没柱子的蓄水高度，左右两边最高的柱子最小值减去自己的高度
+ 
+ 这个技巧要会啊！
+ 
+！！！得出公式 water[i] = min(max_left_height, max_right_height) - height
+ 
+ 
+ 2. 如何取得 i 左右的最大值!!!!!!
+ 
+ 3. 找到最大最小值后，再遍历一遍得出结果
+ 
+ 方法二：
+ 1. 递归，自顶向下分解
+ 
+ 1. 找到最高的柱子
+ 2. 处理左边
+ 3. 处理右边
+ 
+ 临界点：
+ 
  */
 
 class TrappingRainWater {
-  
-  func findPosition(start: Int, _ nums: [Int], limitHeight: Int) -> Int {
-    var maxH = 0
-    var idx = 0
-    
-    var i = start
-    while i < nums.count {
-      if nums[i] >= limitHeight {
-        return i
-      }else {
-        maxH = max(maxH, nums[i])
-        idx = i
-      }
-      i += 1
-    }
-
-    return idx
-  }
-  
   func trap(_ height: [Int]) -> Int {
     if height.count < 2 { return 0 }
+
+    let len = height.count
+    var maxLeft = Array<Int>(repeating: 0, count: len)
+    var maxRight = Array<Int>(repeating: 0, count: len)
     
-    var l = 0
-    var r = height.count - 1
-    while l < r && height[l] == 0 { l += 1 }
-    while r > l && height[r] == 0 { r -= 1 }
-    
-    var totalHeight = 0
-    var waterAnchor = l
-    while waterAnchor != r {
-      let p = findPosition(start: waterAnchor+1, height, limitHeight: height[waterAnchor])
-      let minH = min(height[waterAnchor], height[p])
-      var index = waterAnchor + 1
-      while index < p {
-        totalHeight += (minH - height[index])
-        index += 1
-      }
-      waterAnchor = p
+    for i in 1..<len {
+      maxLeft[i] = max(maxLeft[i-1], height[i-1])
+      maxRight[len-i-1] = max(maxRight[len-i], height[len-i])
     }
     
-    return totalHeight
+    var total = 0
+    for i in 1..<len {
+      let water = min(maxLeft[i], maxRight[i]) - height[i]
+      if water > 0 {
+        total += water
+      }
+    }
+
+    return total
   }
+  
+  func trap_(_ height: [Int]) -> Int {
+    let len = height.count
+    var maxIdx = 0
+    
+    // find max index
+    for i in 0..<len {
+      if height[i] > height[maxIdx] {
+        maxIdx = i
+      }
+    }
+    
+    var total = 0
+    var peak = 0
+    // left
+    for i in 0..<maxIdx {
+      if height[i] > peak {
+        peak = height[i]
+      }else {
+        total += (peak - height[i])
+      }
+    }
+    
+    peak = 0
+    // right
+    for i in stride(from: len-1, to: maxIdx, by: -1) {
+      if height[i] > peak {
+        peak = height[i]
+      }else {
+        total += (peak - height[i])
+      }
+    }
+    
+    return total
+  }
+  
 }
 
 
@@ -80,6 +111,12 @@ extension TrappingRainWater: Algorithm {
   func doTest() {
     performLogCostTime(self.name + "method1") {
       print(trap([0,1,0,2,1,0,1,3,2,1,2,1]))
+//          left: 0,0,1,1,2,2,2,2,3,3,3,3
+//         rigth: 3,3,3,3,3,3,3,2,2,2,1,0
+    }
+    
+    performLogCostTime(self.name + "method2") {
+      print(trap_([0,1,0,2,1,0,1,3,2,1,2,1]))
     }
   }
 }

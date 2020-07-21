@@ -161,7 +161,47 @@ if false {
   algorithm?.doTest()
 }
 
-if true {
+if false {
   algorithm = GasStation()
+  algorithm?.doTest()
+}
+
+if false {
+  algorithm = Candy()
+  algorithm?.doTest()
+}
+
+if false {
+  algorithm = SingleNumber()
+  algorithm?.doTest()
+}
+
+if false {
+  algorithm = SingleNumber2()
+  algorithm?.doTest()
+}
+
+if false {
+  algorithm = AddTwoNumbers()
+  algorithm?.doTest()
+}
+
+if false {
+  algorithm = ReverseLinkedList()
+  algorithm?.doTest()
+}
+
+if false {
+  algorithm = ReverseLinkedList2()
+  algorithm?.doTest()
+}
+
+if false {
+  algorithm = PartitionList()
+  algorithm?.doTest()
+}
+
+if true {
+  algorithm = RemoveDuplicatesfromSortedList()
   algorithm?.doTest()
 }

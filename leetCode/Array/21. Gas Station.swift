@@ -9,7 +9,7 @@
 import Foundation
 
 /*
- 贪心算法
+ 贪心算法，分析数据，找到合适算法 med
 
  在一条环路上有 N 个加油站，其中第 i 个加油站有汽油 gas[i] 升。
  你有一辆油箱容量无限的的汽车，从第 i 个加油站开往第 i+1 个加油站需要消耗汽油 cost[i] 升。
@@ -89,6 +89,23 @@ class GasStation {
       }
     }
     return -1
+  }
+
+  func canCompleteCircuit_(_ gas: [Int], _ cost: [Int]) -> Int {
+    let len = gas.count
+    var spare = 0
+    var minSpare = Int.max
+    var minIndex = 0
+    
+    for i in 0..<len {
+      spare += gas[i] - cost[i]
+      if spare < minSpare {
+        minSpare = spare
+        minIndex = i
+      }
+    }
+    
+    return spare < 0 ? -1 : (minIndex + 1) % len
   }
 }
 
