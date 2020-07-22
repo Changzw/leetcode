@@ -206,7 +206,27 @@ if false {
   algorithm?.doTest()
 }
 
-if true {
+if false {
   algorithm = RemoveDuplicatesfromSortedList2()
+  algorithm?.doTest()
+}
+
+if false {
+  algorithm = RotateList()
+  algorithm?.doTest()
+}
+
+if false {
+  algorithm = RemoveNthNodeFromEndofList()
+  algorithm?.doTest()
+}
+
+if false {
+  algorithm = SwapNodesInPairs()
+  algorithm?.doTest()
+}
+
+if true {
+  algorithm = ReverseNodesInk_Group()
   algorithm?.doTest()
 }

@@ -18,36 +18,83 @@ import Foundation
  
  输入: 1->1->1->2->3
  输出: 2->3
+ 
+ 分析:
+ 使用hash map 缓存处理
+ 
+ 1. 遍历两边
+ 2. 第一遍 标记缓存
+ 3. 第二遍 遍历所有，如果个数超过 2 就跳过
  */
 class RemoveDuplicatesfromSortedList2 {
   func deleteDuplicates(_ head: ListNode?) -> ListNode? {
-    var prev = head
-    var cur = head.next
-    
+    var map: [Int: Int] = [:]
+    var cur = head
     while cur != nil {
-      
+      if map[cur!.val] != nil {
+        map[cur!.val]! += 1
+      }else {
+        map[cur!.val] = 1
+      }
+      cur = cur?.next
     }
-    return head
+    
+    var head_ = head
+    while head_ != nil && map[head_!.val]! != 1 {
+      head_ = head_?.next
+    }
+    
+    var prev = head_
+    cur = prev?.next
+    while prev != nil && cur != nil {
+      if map[cur!.val]! > 1 {
+        cur = cur?.next
+        prev?.next = cur
+      }else {
+        cur = cur?.next
+        prev = prev?.next
+      }
+    }
+    
+    return head_
+  }
+  
+  func deleteDuplicates_(_ head: ListNode?) -> ListNode? {
+    let top = ListNode(0)
+    top.next = head
+    var prev = top
+    var current = head
+    while let cur = current, var next = cur.next {
+      if cur.val == next.val{
+        while let end = next.next{ //求出next指向最后一个相等的
+          if cur.val == end.val {
+            next = end
+          }else{
+            break
+          }
+        }
+        prev.next = next.next
+        current = next.next
+      }else{
+        prev = cur
+        current = next
+      }
+    }
+    return top.next
   }
 }
 
 extension RemoveDuplicatesfromSortedList2: Algorithm {
   func doTest() {
-    var idx = 0
-    let conun = 7
-    
-    let l1 = ListNode(Int.random(in: 0...9))
-    var p1 = l1
-    while idx < conun {
-      p1.next = ListNode(Int.random(in: 0...9))
-      p1 = p1.next!
-      idx += 1
+    let l1 = ListNode(1)
+    var p = l1
+    [1].forEach { (i) in
+      p.next = ListNode(i)
+      p = p.next!
     }
-    p1.next = nil
-    print(l1)
-    
+    p.next = nil
     performLogCostTime(self.name) {
-      print(deleteDuplicates(l1)!)
+      print(deleteDuplicates_(l1))
     }
   }
 }
