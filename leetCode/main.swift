@@ -226,7 +226,37 @@ if false {
   algorithm?.doTest()
 }
 
-if true {
+if false {
   algorithm = ReverseNodesInk_Group()
+  algorithm?.doTest()
+}
+
+if false {
+  algorithm = PowXN()
+  algorithm?.doTest()
+}
+
+if false {
+  algorithm = Numberof1bits()
+  algorithm?.doTest()
+}
+
+if false {
+  algorithm = BinaryTreePreorderTraversal()
+  algorithm?.doTest()
+}
+
+if false {
+  algorithm = BinaryTreeInorderTraversal()
+  algorithm?.doTest()
+}
+
+if false {
+  algorithm = BinaryTreePostorderTraversal()
+  algorithm?.doTest()
+}
+
+if true {
+  algorithm = BinaryTreeLevelOrderTraversal()
   algorithm?.doTest()
 }

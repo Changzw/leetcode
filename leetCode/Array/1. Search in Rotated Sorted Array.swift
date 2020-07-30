@@ -9,6 +9,9 @@
 import Foundation
 
 /*
+ 难度：中等，分类分析题型
+ https://leetcode-cn.com/problems/search-in-rotated-sorted-array/
+ 
  假设按照升序排序的数组在预先未知的某个点上进行了旋转。
  ( 例如，数组 [0,1,2,4,5,6,7] 可能变为 [4,5,6,7,0,1,2] )。
  搜索一个给定的目标值，如果数组中存在这个目标值，则返回它的索引，否则返回 -1 。
@@ -29,10 +32,63 @@ import Foundation
  3. 判断 target 是否在有序区间呢
     * 注意有序边界情况
  4. 不在有序内就是另一边
+ 
+ 
+ 本题是需要使用二分查找，怎么分是关键，举个例子：
+ 
+ 第一类
+ 1011110111 和 1110111101 这种。此种情况下 nums[start] == nums[mid]，分不清到底是前面有序还是后面有序，此时 start++ 即可。相当于去掉一个重复的干扰项。
+ 第二类
+ 2 3 4 5 6 7 1 这种，也就是 nums[start] < nums[mid]。此例子中就是 2 < 5；
+ 这种情况下，前半部分有序。因此如果 nums[start] <=target<nums[mid]，则在前半部分找，否则去后半部分找。
+ 第三类
+ 6 7 1 2 3 4 5 这种，也就是 nums[start] > nums[mid]。此例子中就是 6 > 2；
+ 这种情况下，后半部分有序。因此如果 nums[mid] <target<=nums[end]。则在后半部分找，否则去前半部分找。
  */
 
 class SearchRotatedSortedArray {
 
+//  func search_() ->  {
+//
+//      if (nums == null || nums.length == 0) {
+//        return false;
+//      }
+//      int start = 0;
+//      int end = nums.length - 1;
+//      int mid;
+//      while (start <= end) {
+//        mid = start + (end - start) / 2;
+//        if (nums[mid] == target) {
+//          return true;
+//        }
+//        if (nums[start] == nums[mid]) {
+//          start++;
+//          continue;
+//        }
+//        //前半部分有序
+//        if (nums[start] < nums[mid]) {
+//          //target在前半部分
+//          if (nums[mid] > target && nums[start] <= target) {
+//            end = mid - 1;
+//          } else {  //否则，去后半部分找
+//            start = mid + 1;
+//          }
+//        } else {
+//          //后半部分有序
+//          //target在后半部分
+//          if (nums[mid] < target && nums[end] >= target) {
+//            start = mid + 1;
+//          } else {  //否则，去后半部分找
+//            end = mid - 1;
+//
+//          }
+//        }
+//      }
+//      //一直没找到，返回false
+//      return false;
+//
+//  }
+  
   func search(_ nums: [Int], _ target: Int) -> Int {
     if nums.count == 1 {
       return target == nums[0] ? 0 : -1

@@ -9,6 +9,7 @@
 import Foundation
 
 /*
+ https://leetcode-cn.com/problems/search-in-rotated-sorted-array-ii/
  假设按照升序排序的数组在预先未知的某个点上进行了旋转。
  ( 例如，数组 [0,0,1,2,2,5,6] 可能变为 [2,5,6,0,0,1,2] )。
  编写一个函数来判断给定的目标值是否存在于数组中。若存在返回 true，否则返回 false。
@@ -30,7 +31,6 @@ import Foundation
  有重复的，会造成哪边是有序的不确定
  需要重新找到有序的判定条件
  or 剔除重复元素，再查找
- 
  */
 
 class SearchRotatedSortedArray2 {

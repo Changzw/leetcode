@@ -96,10 +96,6 @@ class TwoSum {
 }
 
 extension TwoSum: Algorithm {
-  var name: String {
-    return "2Sum"
-  }
-  
   func doTest() {
  
     performLogCostTime(self.name + "method1") {
