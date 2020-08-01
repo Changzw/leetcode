@@ -112,17 +112,32 @@ class MaximumSubarray {
     return maxSubArray(nums, left: 0, right: nums.count - 1)
   }
 
-//when it comes to DP, the first thing for us to figure out is the format of the sub problem(or the state of each sub problem).
-//The format of the sub problem can be helpful when we are trying to come up with the recursive relation.
+  
+  
+  // 公式 f(i) = max(f(i-1) + (i), (i))
+  // 用 f(i) 代表以第 i 个数结尾的「连续子数组的最大和，那么很显然我们要求的答案就是： max{f(i)}
+  // 第 i 个元素之前的 i-1 最大数组之和, 添加 (i), 如果比 i 小, 说明 f(i-1) 是负数，最大和直接取 f(i) = (i)
+  
   func maxSubArray4(_ nums: [Int]) -> Int {
-    var maxCurrentSum = nums[0], maxSum = nums[0], i = 0
-    while i<nums.count {
-      maxCurrentSum = max(nums[i], maxCurrentSum + nums[i])
-      maxSum = max(maxCurrentSum, maxSum)
-      i += 1
+    var f = [Int](repeating: 0, count: nums.count)
+    f[0] = nums[0]
+
+    for i in 1..<nums.count {
+      f[i] = max(f[i-1] + nums[i], nums[i])
     }
     
-    return maxSum
+    return f.max()!
+  }
+
+  func maxSubArray5(_ nums: [Int]) -> Int {
+    var maxR = nums[0]
+    var pre = 0
+    
+    for item in nums[1...] {
+      pre = max(item, pre + item)
+      maxR = max(pre, maxR)
+    }
+    return maxR
   }
 }
 
@@ -132,14 +147,17 @@ extension MaximumSubarray: Algorithm {
   }
   
   func doTest() {
-    performLogCostTime(self.name+"0") {
+    performLogCostTime(self.name+"method3") {
       print(maxSubArray3([-2,1,-3,4,-1,2,1,-5,4]))
     }
     
     
-    performLogCostTime(self.name+"1") {
+    performLogCostTime(self.name+"method4") {
       print(maxSubArray4([-2,1,-3,4,-1,2,1,-5,4]))
     }
 
+    performLogCostTime(self.name+"method5") {
+      print(maxSubArray5([-2,1,-3,4,-1,2,1,-5,4]))
+    }
   }
 }

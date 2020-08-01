@@ -62,18 +62,18 @@ class BinaryTreeLevelOrderTraversal {
     var res = [[Int]]()
     var cur: TreeNode? = root
     
-    while cur != nil {
-      res.append(cur!.val)
-      if let left = cur?.left { queue.append(left) }
-      if let right = cur?.right { queue.append(right) }
-      
-      front += 1
-      if front < queue.count {
-        cur = queue[front]
-      }else {
-        cur = nil
-      }
-    }
+//    while cur != nil {
+//      res.append(cur!.val)
+//      if let left = cur?.left { queue.append(left) }
+//      if let right = cur?.right { queue.append(right) }
+//
+//      front += 1
+//      if front < queue.count {
+//        cur = queue[front]
+//      }else {
+//        cur = nil
+//      }
+//    }
     
     return res
   }

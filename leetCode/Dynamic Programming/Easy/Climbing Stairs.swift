@@ -49,15 +49,11 @@ class ClimbingStairs {
    */
   
   func climbStairs__(_ n: Int) -> Int {
-    if n <= 2 {
-      return n
-    }
-    
+    if n <= 2 { return n }
     return climbStairs__(n - 1) + climbStairs__(n - 2)
   }
   
-  
-  
+  // memo
   func climbStairs_memo(_ n: Int) -> Int {
     var memo: [Int?] = Array(repeating: nil, count: n)
     
