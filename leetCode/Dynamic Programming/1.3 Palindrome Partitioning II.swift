@@ -29,11 +29,11 @@ class PalindromePartitioningII {
 
 extension PalindromePartitioningII: Algorithm {
   func doTest() {
-    performLogCostTime(self.name+"method1") {
+    performLogCostTime(self.name+" method1") {
       print(isPalindrome("1110210111"))
     }
-    performLogCostTime(self.name+"method2") { }
-    performLogCostTime(self.name+"method3") { }
+    performLogCostTime(self.name+" method2") { }
+    performLogCostTime(self.name+" method3") { }
   }
 }
 
@@ -82,10 +82,10 @@ class PalindromePartitioning {
 
 extension PalindromePartitioning: Algorithm {
   func doTest() {
-    performLogCostTime(self.name+"method1") {
+    performLogCostTime(self.name+" method1") {
       
     }
-    performLogCostTime(self.name+"method2") { }
-    performLogCostTime(self.name+"method3") { }
+    performLogCostTime(self.name+" method2") { }
+    performLogCostTime(self.name+" method3") { }
   }
 }

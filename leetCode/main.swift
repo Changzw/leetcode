@@ -17,16 +17,6 @@ func performLogCostTime(_ name: String, _ exec: () -> ()) {
 
 var algorithm: Algorithm?
 
-//#pragma clang diagnostic push
-////"-Wunused-variable"这里就是警告的类型
-//#pragma clang diagnostic ignored "-Wunused-variable"
-//int a;
-//#pragma clang diagnostic pop
-//在宏控制里的a变量不会产生黄色警告。
-//
-//也可以在作用域比较大的头文件中包含：
-//
-//#pragma clang diagnostic ignored "警告名称''
 if false { algorithm = LongestRepeatingCharacterReplacement() }
 if false { algorithm = LongestSubstring() }
 if false { algorithm = _3Sum() }
@@ -74,7 +64,12 @@ if false { algorithm = BinaryTreeInorderTraversal() }
 if false { algorithm = BinaryTreePostorderTraversal() }
 if false { algorithm = Triangle() }
 if false { algorithm = MaximumSubarray() }
-if true { algorithm = PalindromePartitioningII() }
-if true { algorithm = LongestPalindromic() }
+if false { algorithm = LongestPalindromic() }
+if false { algorithm = PalindromePartitioningII() }
+if false { algorithm = UniquePaths() }
+if false { algorithm = MinPathSum() }
+if false { algorithm = DecodeWays() }
+if true { algorithm = WordBreak() }
+//if true { algorithm = PerfectSquares() }
 
 algorithm?.doTest()

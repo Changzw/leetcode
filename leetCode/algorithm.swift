@@ -16,5 +16,4 @@ protocol Algorithm {
 
 extension Algorithm {
   var name: String { String(describing: Self.self) }
-  
 }

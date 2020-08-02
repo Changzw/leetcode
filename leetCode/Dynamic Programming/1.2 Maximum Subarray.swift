@@ -147,16 +147,16 @@ extension MaximumSubarray: Algorithm {
   }
   
   func doTest() {
-    performLogCostTime(self.name+"method3") {
+    performLogCostTime(self.name+" method3") {
       print(maxSubArray3([-2,1,-3,4,-1,2,1,-5,4]))
     }
     
     
-    performLogCostTime(self.name+"method4") {
+    performLogCostTime(self.name+" method4") {
       print(maxSubArray4([-2,1,-3,4,-1,2,1,-5,4]))
     }
 
-    performLogCostTime(self.name+"method5") {
+    performLogCostTime(self.name+" method5") {
       print(maxSubArray5([-2,1,-3,4,-1,2,1,-5,4]))
     }
   }
