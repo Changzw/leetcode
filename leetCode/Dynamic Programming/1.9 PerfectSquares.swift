@@ -46,11 +46,24 @@ class PerfectSquares {
       for j in 1...i {
         let s = j * j
         if s > i { break }
-        dp[i] = min(dp[i-1] + 1, dp[i-s] + 1)
+        dp[i] = min(dp[i], dp[i-s] + 1)
       }
     }
     
     return dp.last!
+  }
+  
+  func numSquares0(_ n: Int) -> Int {
+    if n < 3 {
+      return n
+    }
+    var minV = Int.max - 1
+    for i in 3...n {
+      let i2 = i**2
+      if i2 > n { break }
+      minV = min(minV, numSquares0(n-i2) + 1)
+    }
+    return minV
   }
 }
 
@@ -59,9 +72,9 @@ extension PerfectSquares: Algorithm {
     performLogCostTime(self.name+" method") {
       print(numSquares(12))
     }
-    //    performLogCostTime(self.name+" method1") {
-    //      print(uniquePaths1(22, 25))
-    //    }
+    performLogCostTime(self.name+" method0") {
+      print(numSquares0(12))
+    }
     //    performLogCostTime(self.name+" method2") {
     //      print(uniquePaths2(22, 25))
     //    }

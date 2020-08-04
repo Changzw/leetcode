@@ -34,9 +34,34 @@ import Foundation
  分析：
  将 wordDict 数组存到字典中 key 是每个数组中的值
  loop s, 在 字典中查，如果存在 则返回
+ 1. 逐一遍历 s,放在 wordDict 中判断
+    true 换一个 start 继续跑
+    false 遍历 j
+ 2. 终止条件，start == s.count // 说明之前的子串都是存在的
+ 
+这道题不应该用自顶向下的思考方式来解
+ 
  */
 
 class WordBreak {
+  
+  func wordBreak0(_ s: String, _ wordDict: [String]) -> Bool {
+    let set = Set(wordDict)
+    
+    func checkWord(_ s: String, _ set: Set<String>, _ start: Int) -> Bool {
+      if start == s.count { return true }// start
+      for end in start+1..<s.count {
+        let si = s.index(s.startIndex, offsetBy: start)
+        let ei = s.index(s.startIndex, offsetBy: end)
+        if set.contains(String(s[si...ei])) && checkWord(s, set, end) {
+          return true
+        }
+      }
+      return false
+    }
+    return checkWord(s, set, 0)
+  }
+
   func wordBreak(_ s: String, _ wordDict: [String]) -> Bool {
     let set = Set(wordDict)
     var dp = [Bool](repeating: false, count: s.count + 1)
@@ -60,5 +85,9 @@ extension WordBreak: Algorithm {
     performLogCostTime(self.name+" method") {
       print(wordBreak("leetappleapplecode", ["leet","code","apple"]))
     }
+    performLogCostTime(self.name+" method0") {
+      print(wordBreak0("leetappleapplecode", ["leet","code","apple"]))
+    }
+
   }
 }

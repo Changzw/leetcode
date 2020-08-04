@@ -62,6 +62,8 @@ if false { algorithm = Numberof1bits() }
 if false { algorithm = BinaryTreePreorderTraversal() }
 if false { algorithm = BinaryTreeInorderTraversal() }
 if false { algorithm = BinaryTreePostorderTraversal() }
+if false { algorithm = BinaryTreeLevelOrderTraversal() }
+if false { algorithm = BinaryTreeLevelOrderTraversalII() }
 if false { algorithm = Triangle() }
 if false { algorithm = MaximumSubarray() }
 if false { algorithm = LongestPalindromic() }
@@ -70,6 +72,10 @@ if false { algorithm = UniquePaths() }
 if false { algorithm = MinPathSum() }
 if false { algorithm = DecodeWays() }
 if true { algorithm = WordBreak() }
-//if true { algorithm = PerfectSquares() }
+if true { algorithm = longestIncreasingSubsequence() }
+if true { algorithm = CoinChange() }
+
+if true { algorithm = PerfectSquares() }
+if true { algorithm = MaximumProductSubarray() }
 
 algorithm?.doTest()

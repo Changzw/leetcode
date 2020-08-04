@@ -11,7 +11,9 @@ import Foundation
 /*
  https://leetcode-cn.com/problems/coin-change/
  难度中等
- 给定不同面额的硬币 coins 和一个总金额 amount。编写一个函数来计算可以凑成总金额所需的最少的硬币个数。如果没有任何一种硬币组合能组成总金额，返回 -1。
+ 给定不同面额的硬币 coins 和一个总金额 amount。
+ 编写一个函数来计算可以凑成总金额所需的最少的硬币个数。
+ 如果没有任何一种硬币组合能组成总金额，返回 -1。
  
  示例 1:
    输入: coins = [1, 2, 5], amount = 11
@@ -24,18 +26,33 @@ import Foundation
   
  说明:
  你可以认为每种硬币的数量是无限的。
+ 
+ 分析:
+ f(n) = min[f(n-a[i])] + 1
+ f(0) = 0
+ 
+ dp[i] = min(dp[i], dp[i-a[j]] + 1)
  */
 class CoinChange {
   func coinChange(_ coins: [Int], _ amount: Int) -> Int {
+    if coins.min()! > amount { return -1 }
     
-    return 0
+    var dp = [Int](repeating: Int.max - 1, count: amount+1)
+    dp[0] = 0
+    
+    for c in coins {
+      for x in c...amount {
+        dp[x] = min(dp[x], dp[x-c] + 1)
+      }
+    }
+    return dp.last! != Int.max - 1 ? dp.last! : -1
   }
 }
 
 extension CoinChange: Algorithm {
   func doTest() {
     performLogCostTime(self.name+" method") {
-//      print(numDecodings("10"))
+      print(coinChange([1], 0))
     }
     //    performLogCostTime(self.name+" method1") {
     //      print(uniquePaths1(22, 25))
