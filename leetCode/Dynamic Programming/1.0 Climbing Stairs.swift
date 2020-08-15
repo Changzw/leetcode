@@ -140,11 +140,7 @@ class ClimbingStairs {
 }
 
 extension ClimbingStairs: Algorithm{
-  var name: String{
-    return "climbing-stairs"
-  }
-  
-  func doTest() {
+func doTest() {
     performLogCostTime(self.name + "new") {
       print(climbStairs__(5))
     }

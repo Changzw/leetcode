@@ -79,6 +79,12 @@
 		90F0B7DD24D908DA00048EAE /* Int+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F0B7DC24D908DA00048EAE /* Int+extension.swift */; };
 		90F0B7DF24D93C5300048EAE /* 1.5 Binary Tree Level Order Traversal II.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F0B7DE24D93C5300048EAE /* 1.5 Binary Tree Level Order Traversal II.swift */; };
 		90F0B7E124D9402300048EAE /* 1.6 Recover Binary Search Tree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F0B7E024D9402300048EAE /* 1.6 Recover Binary Search Tree.swift */; };
+		90F0B88624DD386100048EAE /* 1.7 Lowest Common Ancestor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F0B88524DD386100048EAE /* 1.7 Lowest Common Ancestor.swift */; };
+		90F0B88924DF9ADD00048EAE /* 1.1 LRU.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F0B88824DF9ADD00048EAE /* 1.1 LRU.swift */; };
+		90F0BB5A24E7717B00048EAE /* 1.8 Validate binary search tree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F0BB5924E7717B00048EAE /* 1.8 Validate binary search tree.swift */; };
+		90F0BB5C24E780E400048EAE /* 1.9 Binary Tree Zigzag Level Order Traversal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F0BB5B24E780E400048EAE /* 1.9 Binary Tree Zigzag Level Order Traversal.swift */; };
+		90F0BB5E24E78C6600048EAE /* 1.10 Maximum Depth Of Binary Tree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F0BB5D24E78C6600048EAE /* 1.10 Maximum Depth Of Binary Tree.swift */; };
+		90F0BB6024E7935A00048EAE /* 1.12 Unique Binary Search Trees.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F0BB5F24E7935A00048EAE /* 1.12 Unique Binary Search Trees.swift */; };
 		90FD271324D155B500A6CA7E /* 1.3 Binary Tree Postorder Traversal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90FD271224D155B500A6CA7E /* 1.3 Binary Tree Postorder Traversal.swift */; };
 		90FD271824D2BFFC00A6CA7E /* 1.4 Binary Tree Level Order Traversal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90FD271724D2BFFC00A6CA7E /* 1.4 Binary Tree Level Order Traversal.swift */; };
 /* End PBXBuildFile section */
@@ -169,6 +175,12 @@
 		90F0B7DC24D908DA00048EAE /* Int+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+extension.swift"; sourceTree = "<group>"; };
 		90F0B7DE24D93C5300048EAE /* 1.5 Binary Tree Level Order Traversal II.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "1.5 Binary Tree Level Order Traversal II.swift"; sourceTree = "<group>"; };
 		90F0B7E024D9402300048EAE /* 1.6 Recover Binary Search Tree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "1.6 Recover Binary Search Tree.swift"; sourceTree = "<group>"; };
+		90F0B88524DD386100048EAE /* 1.7 Lowest Common Ancestor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "1.7 Lowest Common Ancestor.swift"; sourceTree = "<group>"; };
+		90F0B88824DF9ADD00048EAE /* 1.1 LRU.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "1.1 LRU.swift"; sourceTree = "<group>"; };
+		90F0BB5924E7717B00048EAE /* 1.8 Validate binary search tree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "1.8 Validate binary search tree.swift"; sourceTree = "<group>"; };
+		90F0BB5B24E780E400048EAE /* 1.9 Binary Tree Zigzag Level Order Traversal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "1.9 Binary Tree Zigzag Level Order Traversal.swift"; sourceTree = "<group>"; };
+		90F0BB5D24E78C6600048EAE /* 1.10 Maximum Depth Of Binary Tree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "1.10 Maximum Depth Of Binary Tree.swift"; sourceTree = "<group>"; };
+		90F0BB5F24E7935A00048EAE /* 1.12 Unique Binary Search Trees.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "1.12 Unique Binary Search Trees.swift"; sourceTree = "<group>"; };
 		90FD271224D155B500A6CA7E /* 1.3 Binary Tree Postorder Traversal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "1.3 Binary Tree Postorder Traversal.swift"; sourceTree = "<group>"; };
 		90FD271724D2BFFC00A6CA7E /* 1.4 Binary Tree Level Order Traversal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "1.4 Binary Tree Level Order Traversal.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -199,6 +211,7 @@
 				90F0B7D624D5C96700048EAE /* 1.9 PerfectSquares.swift */,
 				90F0B7D824D5C9A100048EAE /* 1.10 longest Increasing Subsequence.swift */,
 				90F0B7DA24D5C9CB00048EAE /* 1.11 coin change.swift */,
+				90F0BB5F24E7935A00048EAE /* 1.12 Unique Binary Search Trees.swift */,
 				90A5340424D53FD10029ECED /* DPComment.swift */,
 				90A5340224D53FD10029ECED /* Longest Palindromic.swift */,
 				9067740623B34BC7006423D2 /* medium */,
@@ -243,6 +256,7 @@
 		908E03492394B6C60041EC64 /* leetCode */ = {
 			isa = PBXGroup;
 			children = (
+				90F0B88724DF9ACF00048EAE /* design */,
 				90BEFA912397AA6F00743C81 /* bits */,
 				90BEFA8E239790E500743C81 /* String */,
 				908E03652394BE540041EC64 /* Array */,
@@ -332,6 +346,10 @@
 				90FD271724D2BFFC00A6CA7E /* 1.4 Binary Tree Level Order Traversal.swift */,
 				90F0B7DE24D93C5300048EAE /* 1.5 Binary Tree Level Order Traversal II.swift */,
 				90F0B7E024D9402300048EAE /* 1.6 Recover Binary Search Tree.swift */,
+				90F0B88524DD386100048EAE /* 1.7 Lowest Common Ancestor.swift */,
+				90F0BB5924E7717B00048EAE /* 1.8 Validate binary search tree.swift */,
+				90F0BB5B24E780E400048EAE /* 1.9 Binary Tree Zigzag Level Order Traversal.swift */,
+				90F0BB5D24E78C6600048EAE /* 1.10 Maximum Depth Of Binary Tree.swift */,
 			);
 			path = Tree;
 			sourceTree = "<group>";
@@ -351,6 +369,14 @@
 				90BEFA922397AA7A00743C81 /* Sum of Two Integers.swift */,
 			);
 			path = bits;
+			sourceTree = "<group>";
+		};
+		90F0B88724DF9ACF00048EAE /* design */ = {
+			isa = PBXGroup;
+			children = (
+				90F0B88824DF9ADD00048EAE /* 1.1 LRU.swift */,
+			);
+			path = design;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -415,10 +441,12 @@
 				9091B2F523965C9000DAF380 /* 10. 4Sum.swift in Sources */,
 				90F0B7D324D5BFE600048EAE /* 1.7 Decode Ways.swift in Sources */,
 				9067740823B34BF0006423D2 /* PartitionEqualSubsetSum .swift in Sources */,
+				90F0BB5C24E780E400048EAE /* 1.9 Binary Tree Zigzag Level Order Traversal.swift in Sources */,
 				907EA5C924C6DD830091908F /* 4. Remove Duplicates from Sorted List.swift in Sources */,
 				90FD271324D155B500A6CA7E /* 1.3 Binary Tree Postorder Traversal.swift in Sources */,
 				901043DC24C417E20055F5BB /* 17. Plus One.swift in Sources */,
 				907EA5C324C6978A0091908F /* 24. Single Number II.swift in Sources */,
+				90F0BB5A24E7717B00048EAE /* 1.8 Validate binary search tree.swift in Sources */,
 				901043C824C1856F0055F5BB /* 1. Search in Rotated Sorted Array.swift in Sources */,
 				908E036C2394BE540041EC64 /* 1. Add Two Numbers.swift in Sources */,
 				90AAD92024CD6D850063DD74 /* 1. pow(n,m).swift in Sources */,
@@ -428,9 +456,11 @@
 				90F0B7DB24D5C9CB00048EAE /* 1.11 coin change.swift in Sources */,
 				90DBFA2423D403520048B2C0 /* StringIndex+extension.swift in Sources */,
 				907EA5C724C6D84C0091908F /* 3. Partition List.swift in Sources */,
+				90F0BB5E24E78C6600048EAE /* 1.10 Maximum Depth Of Binary Tree.swift in Sources */,
 				90F0B7DD24D908DA00048EAE /* Int+extension.swift in Sources */,
 				90AAD92624D1211B0063DD74 /* 25. number-of-1-bits.swift in Sources */,
 				90FD271824D2BFFC00A6CA7E /* 1.4 Binary Tree Level Order Traversal.swift in Sources */,
+				90F0BB6024E7935A00048EAE /* 1.12 Unique Binary Search Trees.swift in Sources */,
 				908E034B2394B6C60041EC64 /* main.swift in Sources */,
 				90F0B7D524D5C92500048EAE /* 1.8 Word break.swift in Sources */,
 				907EA5CD24C7E16B0091908F /* 6. Rotate List.swift in Sources */,
@@ -469,6 +499,7 @@
 				907EA5C524C6B87C0091908F /* 2. Reverse Linked List II.swift in Sources */,
 				908E036E2394BE540041EC64 /* 9. 3SumClosest.swift in Sources */,
 				901043CC24C2A4450055F5BB /* 3. SearchInsert.swift in Sources */,
+				90F0B88624DD386100048EAE /* 1.7 Lowest Common Ancestor.swift in Sources */,
 				90DBFA2623D406E60048B2C0 /* Longest Repeating Character Replacement.swift in Sources */,
 				90F0B7E124D9402300048EAE /* 1.6 Recover Binary Search Tree.swift in Sources */,
 				901043D224C2D74E0055F5BB /* 11. removeElement.swift in Sources */,
@@ -481,6 +512,7 @@
 				901043D424C2DF190055F5BB /* 12. Next Permutation.swift in Sources */,
 				90BEFA932397AA7A00743C81 /* Sum of Two Integers.swift in Sources */,
 				908E03722394BE540041EC64 /* removeDuplicates.swift in Sources */,
+				90F0B88924DF9ADD00048EAE /* 1.1 LRU.swift in Sources */,
 				907EA5C124C693830091908F /* 23. Single Number.swift in Sources */,
 				90A5340D24D5496A0029ECED /* 1.4 UniquePaths.swift in Sources */,
 				90A5340824D53FD10029ECED /* 1.3 Palindrome Partitioning II.swift in Sources */,

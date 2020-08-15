@@ -77,7 +77,7 @@ class BinaryTreeInorderTraversal {
   func inorderTraversal__(_ root: TreeNode?) -> [Int] {
     guard let root = root else { return [] }
     
-    var res: [Int] = []
+    let res: [Int] = []
 //    var stack: [TreeNode] = [root]
 //
 //    while let node = stack.popLast() {

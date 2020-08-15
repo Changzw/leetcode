@@ -77,5 +77,9 @@ if true { algorithm = CoinChange() }
 
 if true { algorithm = PerfectSquares() }
 if true { algorithm = MaximumProductSubarray() }
+if true { algorithm = LRUCache(2) }
+if true { algorithm = ValidateBinarySearchTree() }
+if true { algorithm = BinaryTreeZigzagLevelOrderTraversal() }
+if true { algorithm = MaximumDepthOfBinaryTree() }
 
 algorithm?.doTest()
